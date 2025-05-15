@@ -20,9 +20,9 @@ const Inicio = () => {
               <Form.Control
                 type="search"
                 placeholder="Buscar consolas, juegos..."
-                className="me-2"
+                className="me-2 bg-transparent text-white"
               />
-              <Button variant="primary">Buscar</Button>
+              <Button variant="light">Buscar</Button>
             </Form>
           </Carousel.Caption>
         </Carousel.Item>

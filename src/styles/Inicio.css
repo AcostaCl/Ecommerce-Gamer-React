@@ -17,3 +17,6 @@
 .form-custom {
   max-width: 500px;
 }
+.form-custom input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
