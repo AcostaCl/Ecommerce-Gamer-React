@@ -2,7 +2,7 @@ import { Carousel, Form, Button } from "react-bootstrap";
 import banner from "../../img/banner1.png";
 import banner2 from "../../img/banner2.png";
 import "../../styles/Inicio.css";
-
+import { FaSearch } from "react-icons/fa";
 const Inicio = () => {
   return (
     <div>
@@ -17,12 +17,11 @@ const Inicio = () => {
             <h1 className="titulo-custom">VitBite</h1>
             <h2 className="text-light mb-4">¡Encuentra tu consola favorita!</h2>
             <Form className="d-flex w-75 form-custom">
-              <Form.Control
+              <input
                 type="search"
                 placeholder="Buscar consolas, juegos..."
-                className="me-2 bg-transparent text-white"
+                className="me-2 bg-transparent text-light neon-input"
               />
-              <Button variant="light">Buscar</Button>
             </Form>
           </Carousel.Caption>
         </Carousel.Item>
