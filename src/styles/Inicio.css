@@ -1,0 +1,10 @@
+.titulo-custom {
+  font-size: 4em;
+  -webkit-text-stroke: 1px rgb(217, 15, 244);
+  text-shadow: 0 0 50px #d085cb, 0 0 100px #dd72d9;
+  color: transparent;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 70px;
+}

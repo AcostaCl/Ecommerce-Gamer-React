@@ -11,7 +11,7 @@ const Menu = () => {
             <img
               src={logo}
               alt="logo Rolling Coffee"
-              className="img-fluid"
+              className="img-fluid logo-custom"
               width={50}
             />
           </Navbar.Brand>
@@ -38,11 +38,11 @@ const Menu = () => {
               </NavDropdown>
             </Nav>
             <Nav className="texto-iniciarsesion">
-              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link href="#deets">Iniciar sesión</Nav.Link>
             </Nav>
             <Nav className="color-texto">
               <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                Registrarse
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
