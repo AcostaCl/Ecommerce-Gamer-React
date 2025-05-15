@@ -8,3 +8,12 @@
   letter-spacing: 0.05em;
   margin-bottom: 70px;
 }
+
+.image-custom {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.form-custom {
+  max-width: 500px;
+}

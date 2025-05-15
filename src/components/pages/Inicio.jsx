@@ -9,15 +9,14 @@ const Inicio = () => {
       <Carousel controls={false} indicators={false}>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 image-custom"
             src={banner2}
             alt="Banner único"
-            style={{ height: "80vh", objectFit: "cover" }}
           />
           <Carousel.Caption className="d-flex flex-column justify-content-center align-items-center h-100">
             <h1 className="titulo-custom">VitBite</h1>
             <h2 className="text-light mb-4">¡Encuentra tu consola favorita!</h2>
-            <Form className="d-flex w-75" style={{ maxWidth: "500px" }}>
+            <Form className="d-flex w-75 form-custom">
               <Form.Control
                 type="search"
                 placeholder="Buscar consolas, juegos..."
