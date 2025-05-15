@@ -1,0 +1,35 @@
+.menu-bg {
+  background-color: #07051a;
+}
+
+.color-texto .nav-link {
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.color-texto .nav-link:hover {
+  text-shadow: 0 0 5px #d403f4, 0 0 25px #c803f4, 0 0 50px #f403e4,
+    0 0 100px #f403ec;
+}
+
+.texto-iniciarsesion .nav-link {
+  font-weight: 500;
+  color: rgb(220, 188, 229);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #cf66dd, 0 0 25px #c976dc, 0 0 50px #d085cb,
+    0 0 100px #dd72d9;
+}
+
+.texto-iniciarsesion .nav-link:hover {
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.hamburguesa-custom {
+  filter: drop-shadow(0 0 3px #ff00ff) drop-shadow(0 0 6px #ff00ff);
+}

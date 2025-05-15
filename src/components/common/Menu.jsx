@@ -1,15 +1,26 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "../../styles/Menu.css";
+import logo from "../../assets/logo-vitbite.png";
 const Menu = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="menu-bg">
         <Container>
-          <Navbar.Brand href="#home">VitBite</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Brand href="#home">
+            <img
+              src={logo}
+              alt="logo Rolling Coffee"
+              className="img-fluid"
+              width={50}
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="hamburguesa-custom"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto color-texto">
               <Nav.Link href="#features">Inicio</Nav.Link>
               <Nav.Link href="#pricing">Acerca de </Nav.Link>
               <NavDropdown title="Consolas" id="collapsible-nav-dropdown">
@@ -26,8 +37,10 @@ const Menu = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Nav>
+            <Nav className="texto-iniciarsesion">
               <Nav.Link href="#deets">More deets</Nav.Link>
+            </Nav>
+            <Nav className="color-texto">
               <Nav.Link eventKey={2} href="#memes">
                 Dank memes
               </Nav.Link>
