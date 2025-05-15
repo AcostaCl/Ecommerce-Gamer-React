@@ -1,0 +1,14 @@
+{
+  "productos": [
+    {
+      "nombreProducto": "Street Fighter",
+      "precio": 10000,
+      "imagen": "",
+      "categoria": "Lucha",
+      "descripcion": "Street Fighter es la legendaria saga de videojuegos de lucha que ha marcado generaciones. Elige entre un elenco de luchadores icónicos como Ryu, Chun-Li y Ken, y enfréntate en combates llenos de acción, combos espectaculares y técnicas especiales",
+      "requisitos-del-sistema": "Windows 7, Intel Core i3, 4GB RAM, 6GB de almacenamiento libre.",
+      "desarollador": "capcom",
+      "id": "12c"
+    }
+  ]
+}
