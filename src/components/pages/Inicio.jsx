@@ -1,31 +1,42 @@
-import { Carousel, Form, Button } from "react-bootstrap";
+import { Carousel, Form } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import banner from "../../img/banner1.png";
-import banner2 from "../../img/banner2.png";
 import "../../styles/Inicio.css";
-import { FaSearch } from "react-icons/fa";
 const Inicio = () => {
   return (
     <div>
-      <Carousel controls={false} indicators={false}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 image-custom"
-            src={banner2}
-            alt="Banner único"
-          />
-          <Carousel.Caption className="d-flex flex-column justify-content-center align-items-center h-100">
-            <h1 className="titulo-custom">VitBite</h1>
-            <h2 className="text-light mb-4">¡Encuentra tu consola favorita!</h2>
-            <Form className="d-flex w-75 form-custom">
-              <input
-                type="search"
-                placeholder="Buscar consolas, juegos..."
-                className="me-2 bg-transparent text-light neon-input"
+      <section>
+        <article>
+          <Carousel controls={false} indicators={false}>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 image-custom"
+                src={banner}
+                alt="Banner retro"
               />
-            </Form>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+              <Carousel.Caption className="d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 className="titulo-custom">VitBite</h1>
+                <h2 className="text-light mb-4 subtitulo-custom">
+                  Tu mundo gamer retro
+                </h2>
+                <Form className="d-flex w-75 form-custom">
+                  <input
+                    type="search"
+                    placeholder="Buscar consolas, juegos..."
+                    className="me-2 bg-transparent  neon-input"
+                  />
+                </Form>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </article>
+        <article>
+          <Container className="mt-5">
+            <h1 className="display-4">Nuestros Productos</h1>
+            <hr />
+          </Container>
+        </article>
+      </section>
     </div>
   );
 };
