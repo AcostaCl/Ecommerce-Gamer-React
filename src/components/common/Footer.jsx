@@ -79,7 +79,7 @@ const Footer = () => {
               Defensa de los consumidores.
               <Link
                 to={"/BotonArrepentimiento"}
-                className="text-secondary text-decoration-none p-2"
+                className="text-secondary text-decoration-none p-2 text-custom"
               >
                 Botón de arrepentimiento
               </Link>

@@ -1,6 +1,9 @@
-
 const BotonArrepentimiento = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h2>hola</h2>
+    </div>
+  );
 };
 
 export default BotonArrepentimiento;
