@@ -15,28 +15,28 @@ const Footer = () => {
             <h5 className="fw-bold">Navegación</h5>
             <ul className="list-unstyled">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/"}
                   className="text-custom text-decoration-none link-light"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/FormularioContacto"}
                   className="text-custom text-decoration-none link-light"
                 >
                   Contáctanos
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/AcercaDe"}
                   className="text-custom text-decoration-none link-light"
                 >
                   Acerca de
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
@@ -77,9 +77,12 @@ const Footer = () => {
             <br />
             <p>
               Defensa de los consumidores.
-              <a href="#" className="text-secondary text-decoration-none p-2">
+              <Link
+                to={"/BotonArrepentimiento"}
+                className="text-secondary text-decoration-none p-2"
+              >
                 Botón de arrepentimiento
-              </a>
+              </Link>
             </p>
           </Col>
         </Row>
