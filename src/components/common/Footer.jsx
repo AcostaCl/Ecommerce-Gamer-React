@@ -9,22 +9,15 @@ const Footer = () => {
       <Container>
         <Row className="align-items-center text-center text-md-start">
           <Col md={3} className="mb-4 mb-md-0">
-            <Image
-              src={logoFooter}
-              alt="Vitbite logo"
-              fluid
-              className="footer-logo"
-              width={70}
-            />
+            <Image src={logoFooter} alt="Vitbite logo" width={70} />
           </Col>
-          {/* Navegación */}
           <Col md={5} className="mb-4 mb-md-0">
             <h5 className="fw-bold">Navegación</h5>
             <ul className="list-unstyled">
               <li>
                 <a
                   href="#"
-                  className="footer-link text-decoration-none link-light"
+                  className="text-custom text-decoration-none link-light"
                 >
                   Inicio
                 </a>
@@ -32,7 +25,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="footer-link text-decoration-none link-light"
+                  className="text-custom text-decoration-none link-light"
                 >
                   Contáctanos
                 </a>
@@ -40,22 +33,19 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="footer-link text-decoration-none link-light"
+                  className="text-custom text-decoration-none link-light"
                 >
                   Acerca de
                 </a>
               </li>
             </ul>
           </Col>
-
-          {/* Redes sociales */}
           <Col md={4}>
             <h5 className="fw-bold">Redes sociales</h5>
             <div className="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
               <a
                 href="https://www.facebook.com/?locale=es_LA"
                 target="_blank"
-                className="footer-social "
                 aria-label="Facebook"
               >
                 <CiFacebook size={30} />
@@ -63,7 +53,6 @@ const Footer = () => {
               <a
                 href="https://instagram.com"
                 target="_blank"
-                className="footer-social"
                 aria-label="Instagram"
               >
                 <CiInstagram size={30} />
@@ -71,7 +60,6 @@ const Footer = () => {
               <a
                 href="https://x.com/home?lang=es"
                 target="_blank"
-                className="footer-social"
                 aria-label="Twitter"
               >
                 <CiTwitter ook size={30} />
@@ -82,8 +70,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <hr className="bg-white opacity-25 mt-4" />
-
+        <hr className=" opacity-25 mt-4" />
         <Row className="text-center">
           <Col>
             <p>©Todos los derechos reservados.</p>
