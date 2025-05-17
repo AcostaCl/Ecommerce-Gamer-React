@@ -7,7 +7,7 @@
 }
 
 .banner-form {
-  background-image: url(https://www.icegif.com/wp-content/uploads/2023/05/icegif-8.gif);
+  background-image: url(https://giffiles.alphacoders.com/212/212876.gif);
 }
 
 .bg-form {
@@ -23,4 +23,29 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 25px;
+}
+
+.titulo-custom-form {
+  font-size: 3em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(232, 22, 255);
+  text-shadow: 0 0 25px #5b0354;
+  color: transparent;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.boton-formulario {
+  width: 40%;
+  background-color: #b526dc;
+  color: black;
+  border: 2px solid#f403d8;
+  box-shadow: 0 0 10px #f003f4;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.boton-formulario:hover {
+  background-color: #7d039f;
 }

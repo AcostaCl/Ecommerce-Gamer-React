@@ -21,11 +21,7 @@ const FormularioContacto = () => {
   return (
     <div>
       <section className="banner-form text-center py-5">
-        <h1 className="h1-custom">Contactanos</h1>
-        <p className="p-custom">
-          ¿Tenés alguna consulta? Completá el formulario y te responderemos a la
-          brevedad.
-        </p>
+        <h2 className="titulo-custom-form">Contactanos</h2>
       </section>
       <section className="bg-form">
         <Container className="py-5">
@@ -43,7 +39,7 @@ const FormularioContacto = () => {
                 <Col md={6}>
                   <Card className="mb-3 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Teléfono</h5>
+                      <h5>Email</h5>
                       <p>47934243</p>
                     </Card.Body>
                   </Card>
@@ -51,7 +47,7 @@ const FormularioContacto = () => {
                 <Col md={6}>
                   <Card className="mb-3 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Teléfono</h5>
+                      <h5>Local</h5>
                       <p>47934243</p>
                     </Card.Body>
                   </Card>
@@ -67,10 +63,10 @@ const FormularioContacto = () => {
               </Row>
             </Col>
             <Col md={6}>
-              <h3 className="text-light">Formulario</h3>
+              <h3 className="text-light">Formulario de contacto</h3>
               <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group className="mb-3">
-                  <Form.Label>Nombre</Form.Label>
+                  <Form.Label className="text-light">Nombre</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Por ej: José Pérez"
@@ -93,7 +89,7 @@ const FormularioContacto = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>Email</Form.Label>
+                  <Form.Label className="text-light">Email</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="por ej: felizhola@gmail.com"
@@ -120,10 +116,11 @@ const FormularioContacto = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>Mensaje</Form.Label>
+                  <Form.Label className="text-light">Mensaje</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={4}
+                    placeholder="Escribe tu mensaje (máximo 200 caracteres)"
                     {...register("message", {
                       required: "El mensaje es requerido",
                       minLength: {
@@ -142,7 +139,7 @@ const FormularioContacto = () => {
                     {errors.message?.message}
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Button variant="warning" type="submit">
+                <Button type="submit" className="boton-formulario">
                   Enviar
                 </Button>
               </Form>
