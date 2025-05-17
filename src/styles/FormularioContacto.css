@@ -48,4 +48,6 @@
 
 .boton-formulario:hover {
   background-color: #7d039f;
+  border: 2px solid#f403d8;
+  box-shadow: 0 0 10px #900593;
 }

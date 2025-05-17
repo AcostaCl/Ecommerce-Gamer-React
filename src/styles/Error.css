@@ -1,0 +1,14 @@
+.bg-error {
+  background-color: #5d94fa;
+}
+
+.btn-custom {
+  background-color: #9f4312;
+  border: 2px solid black;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #9f4312;
+  border: 2px solid black;
+}
