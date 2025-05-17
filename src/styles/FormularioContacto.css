@@ -13,3 +13,14 @@
 .bg-form {
   background-color: #1a1a2e;
 }
+
+.card-customi {
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.size-col {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+}

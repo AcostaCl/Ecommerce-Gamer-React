@@ -25,30 +25,45 @@ const FormularioContacto = () => {
       </section>
       <section className="bg-form">
         <Container className="py-5">
-          <Row>
-            <Col md={2} className="me-4">
-              <Card className="mb-3 p-3 text-center">
-                <Card.Body>
-                  <h5>Teléfono</h5>
-                  <p>47934243</p>
-                </Card.Body>
-              </Card>
-              <Card className="mb-3 p-3 text-center">
-                <Card.Body>
-                  <h5>Whatsapp</h5>
-                  <p>+54 9 381 333-3333</p>
-                </Card.Body>
-              </Card>
-              <Card className="mb-3 p-3 text-center">
-                <Card.Body>
-                  <h5>Email</h5>
-                  <p>vitbitesupport@gmail.com</p>
-                </Card.Body>
-              </Card>
+          <Row className="d-flex align-items-center justify-content-center">
+            <Col md={4} className="size-col">
+              <Row>
+                <Col md={6}>
+                  <Card className="mb-3 p-3 text-center card-customi">
+                    <Card.Body>
+                      <h5>Teléfono</h5>
+                      <p>47934243</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={6}>
+                  <Card className="mb-3 p-3 text-center card-customi">
+                    <Card.Body>
+                      <h5>Teléfono</h5>
+                      <p>47934243</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={6}>
+                  <Card className="mb-3 p-3 text-center card-customi">
+                    <Card.Body>
+                      <h5>Teléfono</h5>
+                      <p>47934243</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={6}>
+                  <Card className=" mb-2 p-3 text-center card-customi">
+                    <Card.Body>
+                      <h5>Teléfono</h5>
+                      <p>47934243</p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </Col>
             <Col md={6}>
               <h3>Get In Touch</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
               <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group className="mb-3">
                   <Form.Label>Nombre</Form.Label>
