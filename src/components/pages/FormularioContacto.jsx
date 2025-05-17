@@ -2,6 +2,9 @@ import { useForm } from "react-hook-form";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import Swal from "sweetalert2";
 import "../../styles/FormularioContacto.css";
+import { FaRegEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaShop } from "react-icons/fa6";
+
 const FormularioContacto = () => {
   const {
     register,
@@ -31,7 +34,7 @@ const FormularioContacto = () => {
                 <Col md={6}>
                   <Card className="mb-3 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Teléfono</h5>
+                      <FaPhoneAlt />
                       <p>47934243</p>
                     </Card.Body>
                   </Card>
@@ -39,24 +42,24 @@ const FormularioContacto = () => {
                 <Col md={6}>
                   <Card className="mb-3 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Email</h5>
-                      <p>47934243</p>
+                      <FaRegEnvelope />
+                      <p>vitbit@gmail.com</p>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col md={6}>
                   <Card className="mb-3 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Local</h5>
-                      <p>47934243</p>
+                      <FaShop />
+                      <p>Avenida Siria</p>
                     </Card.Body>
                   </Card>
                 </Col>
                 <Col md={6}>
                   <Card className=" mb-2 p-3 text-center card-customi">
                     <Card.Body>
-                      <h5>Teléfono</h5>
-                      <p>47934243</p>
+                      <FaWhatsapp />
+                      <p>38147934243</p>
                     </Card.Body>
                   </Card>
                 </Col>
