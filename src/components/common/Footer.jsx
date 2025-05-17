@@ -13,7 +13,7 @@ const Footer = () => {
           </Col>
           <Col md={5} className="mb-4 mb-md-0">
             <h5 className="fw-bold">Navegación</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled ">
               <li>
                 <Link
                   to={"/"}

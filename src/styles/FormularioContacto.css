@@ -1,0 +1,15 @@
+.form-custom {
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+.form-custom:hover {
+  box-shadow: 0 0 14px #ff00ff;
+}
+
+.banner-form {
+  background-color: #1a1a2e;
+}
+
+.bg-form {
+  background-color: #1a1a2e;
+}
