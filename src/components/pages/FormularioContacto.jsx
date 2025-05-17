@@ -21,7 +21,11 @@ const FormularioContacto = () => {
   return (
     <div>
       <section className="banner-form text-center py-5">
-        <h1>Contactanos</h1>
+        <h1 className="h1-custom">Contactanos</h1>
+        <p className="p-custom">
+          ¿Tenés alguna consulta? Completá el formulario y te responderemos a la
+          brevedad.
+        </p>
       </section>
       <section className="bg-form">
         <Container className="py-5">
@@ -63,7 +67,7 @@ const FormularioContacto = () => {
               </Row>
             </Col>
             <Col md={6}>
-              <h3>Get In Touch</h3>
+              <h3 className="text-light">Formulario</h3>
               <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group className="mb-3">
                   <Form.Label>Nombre</Form.Label>
