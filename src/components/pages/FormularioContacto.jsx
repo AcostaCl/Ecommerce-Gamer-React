@@ -66,88 +66,94 @@ const FormularioContacto = () => {
               </Row>
             </Col>
             <Col md={6}>
-              <h3 className="text-light">Formulario de contacto</h3>
-              <Form onSubmit={handleSubmit(onSubmit)}>
-                <Form.Group className="mb-3">
-                  <Form.Label className="text-light">Nombre</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Por ej: José Pérez"
-                    {...register("name", {
-                      required: "El nombre es requerido",
-                      minLength: {
-                        value: 3,
-                        message: "El mínimo de caracteres es 3",
-                      },
-                      maxLength: {
-                        value: 50,
-                        message: "El máximo de caracteres permitido es 50",
-                      },
-                    })}
-                    isInvalid={!!errors.name}
-                    className="form-customizado"
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.name?.message}
-                  </Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label className="text-light">Email</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="por ej: felizhola@gmail.com"
-                    {...register("email", {
-                      required: "El email es requerido",
-                      pattern: {
-                        value: /^\S+@\S+$/i,
-                        message: "El email ingresado es inválido",
-                      },
-                      minLength: {
-                        value: 3,
-                        message: "El mínimo de caracteres es 3",
-                      },
-                      maxLength: {
-                        value: 50,
-                        message: "El máximo de caracteres permitidos es 50",
-                      },
-                    })}
-                    isInvalid={!!errors.email}
-                    className="form-customizado"
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.email?.message}
-                  </Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label className="text-light">Mensaje</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    rows={4}
-                    placeholder="Escribe tu mensaje (máximo 200 caracteres)"
-                    {...register("message", {
-                      required: "El mensaje es requerido",
-                      minLength: {
-                        value: 3,
-                        message: "El mínimo de caracteres permitidos es 3",
-                      },
-                      maxLength: {
-                        value: 200,
-                        message: "El máximo de caracteres permitidos es 200",
-                      },
-                    })}
-                    isInvalid={!!errors.message}
-                    className="form-customizado"
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.message?.message}
-                  </Form.Control.Feedback>
-                </Form.Group>
-                <Button type="submit" className="boton-formulario ">
-                  Enviar
-                </Button>
-              </Form>
+              <section>
+                <article>
+                  <h3 className="text-light">Formulario de contacto</h3>
+                </article>
+                <article>
+                  <Form onSubmit={handleSubmit(onSubmit)}>
+                    <Form.Group className="mb-3">
+                      <Form.Label className="text-light">Nombre</Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="Por ej: José Pérez"
+                        {...register("name", {
+                          required: "El nombre es requerido",
+                          minLength: {
+                            value: 3,
+                            message: "El mínimo de caracteres es 3",
+                          },
+                          maxLength: {
+                            value: 50,
+                            message: "El máximo de caracteres permitido es 50",
+                          },
+                        })}
+                        isInvalid={!!errors.name}
+                        className="form-customizado"
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.name?.message}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                      <Form.Label className="text-light">Email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        placeholder="por ej: felizhola@gmail.com"
+                        {...register("email", {
+                          required: "El email es requerido",
+                          pattern: {
+                            value: /^\S+@\S+$/i,
+                            message: "El email ingresado es inválido",
+                          },
+                          minLength: {
+                            value: 3,
+                            message: "El mínimo de caracteres es 3",
+                          },
+                          maxLength: {
+                            value: 50,
+                            message: "El máximo de caracteres permitidos es 50",
+                          },
+                        })}
+                        isInvalid={!!errors.email}
+                        className="form-customizado"
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.email?.message}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                      <Form.Label className="text-light">Mensaje</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        rows={4}
+                        placeholder="Escribe tu mensaje (máximo 200 caracteres)"
+                        {...register("message", {
+                          required: "El mensaje es requerido",
+                          minLength: {
+                            value: 3,
+                            message: "El mínimo de caracteres permitidos es 3",
+                          },
+                          maxLength: {
+                            value: 200,
+                            message:
+                              "El máximo de caracteres permitidos es 200",
+                          },
+                        })}
+                        isInvalid={!!errors.message}
+                        className="form-customizado"
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.message?.message}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+                    <Button type="submit" className="boton-formulario">
+                      Enviar
+                    </Button>
+                  </Form>
+                </article>
+              </section>
             </Col>
-            <Col md={4}></Col>
           </Row>
         </Container>
       </section>

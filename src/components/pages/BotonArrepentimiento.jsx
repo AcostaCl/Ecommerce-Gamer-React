@@ -153,7 +153,10 @@ const BotonArrepentimiento = () => {
                         {errors.message?.message}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Button type="submit" className="boton-formulario ">
+                    <Button
+                      type="submit"
+                      className="boton-formulario-arrepentimiento "
+                    >
                       Enviar
                     </Button>
                   </Form>

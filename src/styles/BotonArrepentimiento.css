@@ -12,3 +12,19 @@
   margin-right: 20px;
   margin-top: 100px;
 }
+
+.boton-formulario-arrepentimiento {
+  width: 40%;
+  background-color: #b526dc;
+  color: black;
+  border: 2px solid#f403d8;
+  box-shadow: 0 0 10px #f003f4;
+  margin-left: 170px;
+  margin-top: 10px;
+}
+
+.boton-formulario-arrepentimiento:hover {
+  background-color: #7d039f;
+  border: 2px solid#f403d8;
+  box-shadow: 0 0 10px #900593;
+}
