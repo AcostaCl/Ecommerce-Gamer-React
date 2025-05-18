@@ -61,7 +61,7 @@ const AcercaDe = () => {
             </Col>
             <Col md={6}>
               <article className="px-2">
-                <h4 className="fw-bold mt-3">Trabaja con nosotros</h4>
+                <h4 className="fw-bold mt-3">Acerca de mi</h4>
                 <p className="text-muted">
                   Disfruto trabajar de forma independiente, asumir nuevos retos
                   y construir experiencias digitales que conecten con las
