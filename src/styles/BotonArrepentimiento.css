@@ -1,0 +1,14 @@
+.form-customizado-arrepentimiento {
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+  max-width: 700px;
+}
+.form-customizado:hover {
+  box-shadow: 0 0 14px #ff00ff;
+}
+
+.size-col-arrepentimiento {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+}
