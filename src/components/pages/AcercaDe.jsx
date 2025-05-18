@@ -6,11 +6,11 @@ import { MdOutlineWork } from "react-icons/md";
 const AcercaDe = () => {
   return (
     <>
-      <section className="bg-dark py-5">
+      <section className="bg-estilos py-5">
         <Container className="text-center">
           <article>
-            <h2 className="fw-bold text-light">Sobre nosotros</h2>
-            <p className="text-secondary">
+            <h2 className="fw-bold titulo-estilos">Sobre nosotros</h2>
+            <p className="text-light">
               Vitbite es una tienda online dedicada a videojuegos retro,
               consolas clásicas y nostalgia gamer
             </p>
@@ -80,6 +80,7 @@ const AcercaDe = () => {
           </Row>
         </Container>
       </section>
+      <hr />
       <section className="text-center py-5">
         <article>
           <h3 className="fw-bold">Unite al equipo</h3>
