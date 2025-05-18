@@ -1,8 +1,9 @@
-.form-custom {
+.form-customizado {
   border: 2px solid #ff00ff;
   box-shadow: 0 0 10px #ff00ff;
+  max-width: 500px;
 }
-.form-custom:hover {
+.form-customizado:hover {
   box-shadow: 0 0 14px #ff00ff;
 }
 

@@ -85,7 +85,7 @@ const FormularioContacto = () => {
                       },
                     })}
                     isInvalid={!!errors.name}
-                    className="form-custom"
+                    className="form-customizado"
                   />
                   <Form.Control.Feedback type="invalid">
                     {errors.name?.message}
@@ -112,7 +112,7 @@ const FormularioContacto = () => {
                       },
                     })}
                     isInvalid={!!errors.email}
-                    className="form-custom"
+                    className="form-customizado"
                   />
                   <Form.Control.Feedback type="invalid">
                     {errors.email?.message}
@@ -136,13 +136,13 @@ const FormularioContacto = () => {
                       },
                     })}
                     isInvalid={!!errors.message}
-                    className="form-custom"
+                    className="form-customizado"
                   />
                   <Form.Control.Feedback type="invalid">
                     {errors.message?.message}
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Button type="submit" className="boton-formulario">
+                <Button type="submit" className="boton-formulario ">
                   Enviar
                 </Button>
               </Form>
