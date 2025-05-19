@@ -9,7 +9,9 @@ const Footer = () => {
       <Container>
         <Row className="align-items-center text-center text-md-start">
           <Col md={3} className="mb-4 mb-md-0">
-            <Image src={logoFooter} alt="Vitbite logo" width={70} />
+            <Link to={"/"}>
+              <Image src={logoFooter} alt="Vitbite logo" width={70} />
+            </Link>
           </Col>
           <Col md={5} className="mb-4 mb-md-0">
             <h5 className="fw-bold">Navegación</h5>
