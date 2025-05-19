@@ -22,19 +22,29 @@ const Menu = () => {
             className="hamburguesa-custom"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto color-texto">
-              <Nav.Link href="/">Inicio</Nav.Link>
-              <Nav.Link href="/AcercaDe">Acerca de </Nav.Link>
-              <Nav.Link href="/Carrito">Carrito</Nav.Link>
+            <Nav className="me-auto color-texto ">
+              <Nav.Link as={NavLink} to="/">
+                Inicio
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/AcercaDe">
+                Acerca de{" "}
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/Carrito">
+                Carrito
+              </Nav.Link>
             </Nav>
             <Nav className="texto-iniciarsesion">
-              <Nav.Link href="#deets">Iniciar sesión</Nav.Link>
+              <Nav.Link as={NavLink} to="/Login">
+                Iniciar sesión
+              </Nav.Link>
             </Nav>
             <Nav className="color-texto">
               <Nav.Link href="*">Registrarse</Nav.Link>
             </Nav>
             <Nav className="texto-iniciarsesion">
-              <Nav.Link href="/Administrador">Administrador</Nav.Link>
+              <Nav.Link end as={NavLink} to="/Administrador">
+                Administrador
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
