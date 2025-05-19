@@ -9,6 +9,7 @@ import BotonArrepentimiento from "./components/pages/BotonArrepentimiento";
 import Error404 from "./components/pages/Error404";
 import Carrito from "./components/pages/Carrito.jsx";
 import Login from "./components/pages/Login.jsx";
+import FormularioProducto from "./components/pages/productos/FormularioProducto.jsx";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           />
           <Route path="/Carrito" element={<Carrito />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/administrador/crear" element={<FormularioProducto />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
