@@ -26,15 +26,15 @@ const Menu = () => {
               <Nav.Link as={NavLink} to="/">
                 Inicio
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/AcercaDe">
+              <Nav.Link as={NavLink} to="/acercade">
                 Acerca de{" "}
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/Carrito">
+              <Nav.Link as={NavLink} to="/carrito">
                 Carrito
               </Nav.Link>
             </Nav>
             <Nav className="texto-iniciarsesion">
-              <Nav.Link as={NavLink} to="/Login">
+              <Nav.Link as={NavLink} to="/login">
                 Iniciar sesión
               </Nav.Link>
             </Nav>
@@ -42,7 +42,7 @@ const Menu = () => {
               <Nav.Link href="*">Registrarse</Nav.Link>
             </Nav>
             <Nav className="texto-iniciarsesion">
-              <Nav.Link end as={NavLink} to="/Administrador">
+              <Nav.Link end as={NavLink} to="/administrador">
                 Administrador
               </Nav.Link>
             </Nav>

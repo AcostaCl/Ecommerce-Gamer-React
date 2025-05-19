@@ -21,14 +21,14 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/administrador" element={<Administrador />} />
           <Route path="*" element={<Error404 />} />
-          <Route path="/AcercaDe" element={<AcercaDe />} />
-          <Route path="/FormularioContacto" element={<FormularioContacto />} />
+          <Route path="/acercade" element={<AcercaDe />} />
+          <Route path="/formulariocontacto" element={<FormularioContacto />} />
           <Route
-            path="/BotonArrepentimiento"
+            path="/botonarrepentimiento"
             element={<BotonArrepentimiento />}
           />
-          <Route path="/Carrito" element={<Carrito />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/carrito" element={<Carrito />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/administrador/crear" element={<FormularioProducto />} />
         </Routes>
         <Footer></Footer>

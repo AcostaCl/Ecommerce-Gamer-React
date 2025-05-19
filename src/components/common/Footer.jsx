@@ -26,7 +26,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/FormularioContacto"}
+                  to={"/formulariocontacto"}
                   className="text-custom text-decoration-none link-light"
                 >
                   Contáctanos
@@ -34,7 +34,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/AcercaDe"}
+                  to={"/acercade"}
                   className="text-custom text-decoration-none link-light"
                 >
                   Acerca de
@@ -80,7 +80,7 @@ const Footer = () => {
             <p>
               Defensa de los consumidores.
               <Link
-                to={"/BotonArrepentimiento"}
+                to={"/botonarrepentimiento"}
                 className="text-secondary text-decoration-none p-2 text-custom"
               >
                 Botón de arrepentimiento
