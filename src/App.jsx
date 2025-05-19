@@ -7,6 +7,7 @@ import AcercaDe from "./components/pages/AcercaDe";
 import FormularioContacto from "./components/pages/FormularioContacto";
 import BotonArrepentimiento from "./components/pages/BotonArrepentimiento";
 import Error404 from "./components/pages/Error404";
+import Carrito from "./components/pages/Carrito.jsx";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             path="/BotonArrepentimiento"
             element={<BotonArrepentimiento />}
           />
+          <Route path="/Carrito" element={<Carrito />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
