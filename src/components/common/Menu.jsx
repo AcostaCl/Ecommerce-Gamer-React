@@ -9,7 +9,7 @@ const Menu = () => {
     <div>
       <Navbar collapseOnSelect expand="lg" className="menu-bg">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to="/">
             <img
               src={logo}
               alt="logo Rolling Coffee"
