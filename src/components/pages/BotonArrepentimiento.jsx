@@ -13,7 +13,7 @@ const BotonArrepentimiento = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     Swal.fire({
       title: "Se envió su mensaje con éxito!",
       icon: "success",
@@ -78,7 +78,7 @@ const BotonArrepentimiento = () => {
                 </article>
                 <article>
                   <Form onSubmit={handleSubmit(onSubmit)}>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formNombre">
                       <Form.Label className="text-light">Nombre</Form.Label>
                       <Form.Control
                         type="text"
@@ -101,7 +101,7 @@ const BotonArrepentimiento = () => {
                         {errors.name?.message}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formEmail">
                       <Form.Label className="text-light">Email</Form.Label>
                       <Form.Control
                         type="email"
@@ -128,7 +128,7 @@ const BotonArrepentimiento = () => {
                         {errors.email?.message}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formMensaje">
                       <Form.Label className="text-light">Mensaje</Form.Label>
                       <Form.Control
                         as="textarea"

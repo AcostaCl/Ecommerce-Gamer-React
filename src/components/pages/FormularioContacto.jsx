@@ -72,7 +72,7 @@ const FormularioContacto = () => {
                 </article>
                 <article>
                   <Form onSubmit={handleSubmit(onSubmit)}>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formNombre">
                       <Form.Label className="text-light">Nombre</Form.Label>
                       <Form.Control
                         type="text"
@@ -95,7 +95,7 @@ const FormularioContacto = () => {
                         {errors.name?.message}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formEmail">
                       <Form.Label className="text-light">Email</Form.Label>
                       <Form.Control
                         type="email"
@@ -122,7 +122,7 @@ const FormularioContacto = () => {
                         {errors.email?.message}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-3" controlId="formMensaje">
                       <Form.Label className="text-light">Mensaje</Form.Label>
                       <Form.Control
                         as="textarea"
