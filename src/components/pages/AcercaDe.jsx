@@ -1,8 +1,8 @@
 import "../../styles/AcercaDe.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { IoMdPerson, IoIosCodeWorking } from "react-icons/io";
-import { MdOutlineWork } from "react-icons/md";
 import imagenAcercaDe from "../../img/imagen-acercade.png";
+import { TbClockHour1 } from "react-icons/tb";
 
 const AcercaDe = () => {
   return (
@@ -44,9 +44,9 @@ const AcercaDe = () => {
           <Row className="align-items-center mb-5">
             <Col md={6}>
               <img src={imagenAcercaDe} width={200} className="img-fluid" />
-              <Card className="mt-3 shadow-sm card-acercade">
+              <Card className="mt-4 shadow-sm card-acercade">
                 <Card.Body>
-                  <blockquote className="blockquote  mb-0">
+                  <blockquote className="blockquote mb-0">
                     <p className="text-light">Celina Acosta</p>
                     <footer className="blockquote-footer text-light">
                       Desarrolladora web
@@ -76,8 +76,8 @@ const AcercaDe = () => {
           </Row>
         </Container>
       </section>
-      <section className="text-center py-5 bg-purpura">
-        <hr className="text-light my-4" />
+      <section className="text-center py-2 bg-purpura">
+        <hr className="text-light" />
         <article>
           <h3 className="fw-bold text-light">Unite al equipo</h3>
           <p className="text-light mb-5">
@@ -88,7 +88,7 @@ const AcercaDe = () => {
         <article>
           <Row>
             <Col md={4} className="mb-4">
-              <IoMdPerson size={40} className="text-purpura mb-3" />
+              <TbClockHour1 size={40} className="text-purpura mb-3" />
               <h5 className="fw-bold text-light">Horario</h5>
               <p className="text-light">
                 Flexibilidad horaria y trabajo remoto
@@ -102,7 +102,7 @@ const AcercaDe = () => {
               </p>
             </Col>
             <Col md={4} className="mb-4">
-              <MdOutlineWork size={40} className="text-purpura mb-3" />
+              <IoMdPerson size={40} className="text-purpura mb-3" />
               <h5 className="fw-bold text-light">Personal</h5>
               <p className="text-light">
                 Aprendizaje constante y ambiente sin jerarquías
