@@ -4,8 +4,8 @@ import { FaFileCirclePlus } from "react-icons/fa6";
 
 const Administrador = () => {
   return (
-    <>
-      <section className="container administrador-fondo py-4 min-vh-100">
+    <div className="bg-purpura">
+      <section className="container py-4 min-vh-100">
         <article className="d-flex justify-content-between align-items-center mt-5 mb-4">
           <h2 className="display-4 font-bold text-primary">
             Juegos disponibles
@@ -17,7 +17,7 @@ const Administrador = () => {
             <FaFileCirclePlus />
           </Link>
         </article>
-        <hr className="my-4" />
+        <hr className="my-4 text-light" />
         <article className="table-responsive">
           <Table striped bordered hover className="shadow-sm">
             <thead className="thead-dark">
@@ -34,7 +34,7 @@ const Administrador = () => {
           </Table>
         </article>
       </section>
-    </>
+    </div>
   );
 };
 

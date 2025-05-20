@@ -13,7 +13,7 @@ const FormularioContacto = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     Swal.fire({
       title: "Se envió su mensaje con éxito!",
       icon: "success",
