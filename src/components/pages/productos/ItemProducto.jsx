@@ -16,7 +16,6 @@ const ItemProducto = ({ producto }) => {
           alt={producto.nombreProducto}
         />
       </td>
-
       <td>{producto.descripcion_breve}</td>
       <td>{producto.desarrollador}</td>
       <td className="text-center">

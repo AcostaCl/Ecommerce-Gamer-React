@@ -1,16 +1,6 @@
 {
   "productos": [
     {
-      "nombreProducto": "Street Fighter",
-      "precio": 10000,
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Lucha",
-      "descripcion": "Street Fighter es la legendaria saga de videojuegos de lucha.",
-      "requisitos-del-sistema": "Windows 7, Intel Core i3, 4GB RAM, 6GB de almacenamiento libre.",
-      "desarrollador": "capcom",
-      "id": "12c"
-    },
-    {
       "nombreProducto": "nose2",
       "precio": "433",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
