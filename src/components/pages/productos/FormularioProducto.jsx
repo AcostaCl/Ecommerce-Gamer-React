@@ -14,12 +14,19 @@ const FormularioProducto = () => {
   const onSubmit = async (juego) => {
     console.log(juego);
     const respuesta = await crearProductoAPI(juego);
-    console.log(respuesta);
-    Swal.fire({
-      title: "Se agregó el juego con éxito!",
-      icon: "success",
-    });
-    reset();
+    if (respuesta.status === 201) {
+      Swal.fire({
+        title: "Se agregó el juego correctamente!",
+        icon: "success",
+      });
+      reset();
+    } else {
+      Swal.fire({
+        icon: "error",
+        title:
+          "Ocurrió un error, volve a intentar esta operación en unos minutos",
+      });
+    }
   };
   return (
     <div className="bg-purpura">
