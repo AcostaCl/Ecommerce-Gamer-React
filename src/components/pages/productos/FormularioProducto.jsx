@@ -1,6 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { crearProductoAPI } from "../../helpers/queries";
 const FormularioProducto = () => {
   const {
     register,
@@ -9,8 +10,11 @@ const FormularioProducto = () => {
     reset,
     setValue,
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+
+  const onSubmit = async (juego) => {
+    console.log(juego);
+    const respuesta = await crearProductoAPI(juego);
+    console.log(respuesta);
     Swal.fire({
       title: "Se agregó el juego con éxito!",
       icon: "success",
