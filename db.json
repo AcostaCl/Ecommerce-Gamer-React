@@ -1,34 +1,37 @@
 {
   "productos": [
     {
-      "nombreProducto": "Street Fighter",
-      "precio": 10000,
-      "imagen": "",
-      "categoria": "Lucha",
-      "descripcion": "Street Fighter es la legendaria saga de videojuegos de lucha que ha marcado generaciones. Elige entre un elenco de luchadores icónicos como Ryu, Chun-Li y Ken, y enfréntate en combates llenos de acción, combos espectaculares y técnicas especiales",
-      "requisitos-del-sistema": "Windows 7, Intel Core i3, 4GB RAM, 6GB de almacenamiento libre.",
-      "desarollador": "capcom",
-      "id": "12c"
+      "nombreProducto": "nose2",
+      "precio": "433",
+      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Arcade",
+      "descripcion_breve": "aasdsasdadsa",
+      "descripcion_amplia": "adsdadadsdsdsaadsadad",
+      "desarrollador": "dasadsads",
+      "requisitos_minimos": "addasadsda",
+      "id": "U-WLFc_"
     },
     {
-      "descripcion_amplia": "asdsasdasadsad",
       "nombreProducto": "the legend of zelda",
-      "precio": "544",
+      "precio": "432",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Aventura",
-      "descripcion_breve": "dsadsdsaasdasdasasd",
-      "requisitos_minimos": "sdasadasdasasddas",
-      "id": "ljp0gS5"
+      "categoria": "Plataformas",
+      "descripcion_breve": "es un juego",
+      "descripcion_amplia": "es un juego de arcade",
+      "desarrollador": "nintendo",
+      "requisitos_minimos": "w7 4 gb ram",
+      "id": "ZwjSHwT"
     },
     {
-      "descripcion_amplia": "dfsdsfdfsdfs",
-      "nombreProducto": "mario bros ",
-      "precio": "324",
+      "nombreProducto": "nose3",
+      "precio": "2323",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Puzzle",
-      "descripcion_breve": "dfsdsdsf",
-      "requisitos_minimos": "fdsdfsfds",
-      "id": "-IrD2VT"
+      "categoria": "Arcade",
+      "descripcion_breve": "fddsfdf",
+      "descripcion_amplia": "dfsfsdsdfs",
+      "desarrollador": "dfsfdsdffd",
+      "requisitos_minimos": "dfsdfsdfsfdsfd",
+      "id": "Xq2fnPq"
     }
   ]
 }

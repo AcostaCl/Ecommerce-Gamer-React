@@ -161,7 +161,7 @@ const FormularioProducto = () => {
             <Form.Control
               type="text"
               placeholder="Ej: Nintendo."
-              {...register("descripcion_amplia", {
+              {...register("desarrollador", {
                 required: "El desarrollador es un dato obligatorio",
                 minLength: {
                   value: 2,
