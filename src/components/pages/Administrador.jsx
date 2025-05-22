@@ -45,7 +45,6 @@ const Administrador = () => {
                 <th>Precio</th>
                 <th>Categoría</th>
                 <th>Imagen</th>
-                <th>Descripcion</th>
                 <th>Desarrollador</th>
                 <th>Opciones</th>
               </tr>
