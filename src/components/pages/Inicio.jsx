@@ -1,4 +1,4 @@
-import { Carousel, Form, Container, Row, Col } from "react-bootstrap";
+import { Carousel, Form, Container, Row, Col, Card } from "react-bootstrap";
 import banner from "../../img/banner1.png";
 import "../../styles/Inicio.css";
 import CardProducto from "./productos/CardProducto";
@@ -54,7 +54,7 @@ const Inicio = () => {
         </article>
         <article>
           <Container className="mt-5">
-            <h2 className="display-5 h2-inicio">Nuestros Productos</h2>
+            <h2 className="display-6 h2-inicio">Nuestros Productos</h2>
             <hr className="h2-inicio" />
             <Row>
               {listaJuegos.map((producto) => (
@@ -64,15 +64,16 @@ const Inicio = () => {
                 ></CardProducto>
               ))}
             </Row>
+            <hr className="h2-inicio" />
             <article className="bg-inicio text-white py-4 mt-5">
               <Row className="text-center">
                 <Col md={4}>
-                  <MdLaptopChromebook size={30} className="mb-2" />
+                  <MdLaptopChromebook size={30} className="mb-2 text-purpura" />
                   <h6 className="fw-bold">Catálogo en expansión</h6>
                   <p className="mb-0">Agregamos nuevos clásicos cada semana.</p>
                 </Col>
                 <Col md={4}>
-                  <IoMdPricetags size={30} className="mb-2" />
+                  <IoMdPricetags size={30} className="mb-2 text-purpura" />
                   <h6 className="fw-bold">Descuentos</h6>
                   <p className="mb-0">
                     Ahorrá un 25% pagando por transferencia bancaria.
@@ -80,7 +81,7 @@ const Inicio = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <FaGamepad size={30} className="mb-2" />
+                  <FaGamepad size={30} className="mb-2 text-purpura" />
                   <h6 className="fw-bold">Compatible</h6>
                   <p className="mb-0">
                     Juegos listos para correr en tu PC o en tu emulador
@@ -89,6 +90,54 @@ const Inicio = () => {
                 </Col>
               </Row>
             </article>
+            <h2 className="display-6 h2-inicio">Categorías</h2>
+            <hr className="h2-inicio" />
+            <Row>
+              <Col md={3}>
+                <Card className="bg-dark text-white category-card border-0 mb-3">
+                  <Card.Img
+                    src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
+                    alt="Arcade"
+                  />
+                  <Card.ImgOverlay className="d-flex align-items-end p-2">
+                    <Card.Title>Arcade</Card.Title>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+              <Col md={3}>
+                <Card className="bg-dark text-white category-card border-0 mb-3">
+                  <Card.Img
+                    src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
+                    alt="Plataformas"
+                  />
+                  <Card.ImgOverlay className="d-flex align-items-end p-2">
+                    <Card.Title>Plataformas</Card.Title>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+              <Col md={3}>
+                <Card className="bg-dark text-white category-card border-0 mb-3">
+                  <Card.Img
+                    src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
+                    alt="Aventura"
+                  />
+                  <Card.ImgOverlay className="d-flex align-items-end p-2">
+                    <Card.Title>Aventura</Card.Title>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+              <Col md={3}>
+                <Card className="bg-dark text-white category-card border-0 mb-3">
+                  <Card.Img
+                    src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
+                    alt="Lucha"
+                  />
+                  <Card.ImgOverlay className="d-flex align-items-end p-2">
+                    <Card.Title>Lucha</Card.Title>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+            </Row>
           </Container>
         </article>
       </section>
