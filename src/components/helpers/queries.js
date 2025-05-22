@@ -28,7 +28,7 @@ export const listarProductosAPI = async () => {
 
 export const borrarProductoAPI = async (id) => {
   try {
-    const respuesta = await fetch("http://localhost:3000/productos/", +id, {
+    const respuesta = await fetch("http://localhost:3000/productos/" + id, {
       method: "DELETE",
     });
     console.log(respuesta);

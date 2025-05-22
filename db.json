@@ -1,17 +1,6 @@
 {
   "productos": [
     {
-      "nombreProducto": "nose2",
-      "precio": "433",
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Arcade",
-      "descripcion_breve": "aasdsasdadsa",
-      "descripcion_amplia": "adsdadadsdsdsaadsadad",
-      "desarrollador": "dasadsads",
-      "requisitos_minimos": "addasadsda",
-      "id": "U-WLFc_"
-    },
-    {
       "nombreProducto": "the legend of zelda",
       "precio": "432",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

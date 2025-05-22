@@ -1,8 +1,14 @@
 import { Button } from "react-bootstrap";
 import { BsPencilSquare } from "react-icons/bs";
 import { FaRegTrashAlt } from "react-icons/fa";
+import Swal from "sweetalert2";
+import { borrarProductoAPI } from "../../helpers/queries";
 
 const ItemProducto = ({ producto }) => {
+  const borrarProducto = async () => {
+    const respuesta = await borrarProductoAPI(producto.id);
+  };
+
   return (
     <tr>
       <td className="text-center">{producto.id}</td>
@@ -21,7 +27,7 @@ const ItemProducto = ({ producto }) => {
         <Button variant="warning" className="me-lg-2">
           <BsPencilSquare />
         </Button>
-        <Button variant="danger">
+        <Button variant="danger" onClick={borrarProducto}>
           <FaRegTrashAlt />
         </Button>
       </td>
