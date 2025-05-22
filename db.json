@@ -1,17 +1,6 @@
 {
   "productos": [
     {
-      "nombreProducto": "asdasdasads",
-      "precio": "3223",
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Puzzle",
-      "descripcion_breve": "dsadsaadsdasda",
-      "descripcion_amplia": "adsdasadsdas",
-      "desarrollador": "addaad",
-      "requisitos_minimos": "adadad",
-      "id": "IqEWub4"
-    },
-    {
       "nombreProducto": "dsaaddsasadads",
       "precio": "324",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
