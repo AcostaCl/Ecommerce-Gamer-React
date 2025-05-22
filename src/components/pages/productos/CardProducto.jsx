@@ -3,33 +3,22 @@ import { Link } from "react-router";
 import "../../../styles/CardProducto.css";
 const CardProducto = ({ producto }) => {
   return (
-    <Col md={4} lg={3} className="mb-3">
-      <Card className="h-100 w-100">
-        <div>
-          <img
-            src={producto.imagen}
-            alt={producto.nombreProducto}
-            className="card-img-top-nueva"
-          />
+    <Col xs={12} sm={6} md={4} lg={3} className="mb-4 d-flex">
+      <div className="container-producto w-100">
+        <div className="product h-100 d-flex flex-column">
+          <div className="image-producto">
+            <img src={producto.imagen} alt={producto.nombreProducto} />
+          </div>
+          <div className="namePrice">
+            <h3>{producto.nombreProducto}</h3>
+            <span>${producto.precio}</span>
+          </div>
+          <p>{producto.descripcion_breve}</p>
+          <div className="detalle">
+            <button>Ver más</button>
+          </div>
         </div>
-        <Card.Body>
-          <Card.Title className="primary-font">
-            {producto.nombreProducto}
-          </Card.Title>
-          <Card.Text>
-            Descripción: {producto.descripcion_breve} <br className="mb-2" />
-            <span className="fw-bold">Precio: ${producto.precio}</span>
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer className="text-end">
-          <Link
-            className="me-2 btn btn-purpura"
-            to={"/detalle-producto/" + producto.id}
-          >
-            Ver más
-          </Link>
-        </Card.Footer>
-      </Card>
+      </div>
     </Col>
   );
 };

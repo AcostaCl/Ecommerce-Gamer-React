@@ -23,7 +23,7 @@ const Inicio = () => {
 
   return (
     <div>
-      <section>
+      <section className="bg-inicio">
         <article>
           <Carousel controls={false} indicators={false}>
             <Carousel.Item>
@@ -50,8 +50,8 @@ const Inicio = () => {
         </article>
         <article>
           <Container className="mt-5">
-            <h1 className="display-4">Nuestros Productos</h1>
-            <hr />
+            <h2 className="display-5 h2-inicio">Nuestros Productos</h2>
+            <hr className="h2-inicio" />
             <Row>
               {listaJuegos.map((producto) => (
                 <CardProducto
