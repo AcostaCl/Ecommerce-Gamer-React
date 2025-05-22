@@ -96,7 +96,7 @@ const Inicio = () => {
             <Row>
               <Col md={3}>
                 <Link to="*" className="text-decoration-none">
-                  <div className="category-card mb-3">
+                  <div className="category-card mb-4">
                     <img
                       src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
                       alt="Arcade"
@@ -112,7 +112,7 @@ const Inicio = () => {
 
               <Col md={3}>
                 <Link to="*" className="text-decoration-none">
-                  <div className="category-card mb-3">
+                  <div className="category-card mb-4">
                     <img
                       src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
                       alt="Plataformas"
@@ -128,7 +128,7 @@ const Inicio = () => {
 
               <Col md={3}>
                 <Link to="*" className="text-decoration-none">
-                  <div className="category-card mb-3">
+                  <div className="category-card mb-4">
                     <img
                       src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
                       alt="Aventura"
@@ -144,7 +144,7 @@ const Inicio = () => {
 
               <Col md={3}>
                 <Link to="*" className="text-decoration-none">
-                  <div className="category-card mb-3">
+                  <div className="category-card mb-4">
                     <img
                       src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
                       alt="Lucha"
