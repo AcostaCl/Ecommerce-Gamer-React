@@ -1,15 +1,15 @@
 {
   "productos": [
     {
-      "nombreProducto": "dsaaddsasadads",
-      "precio": "324",
+      "nombreProducto": "daadsdasads",
+      "precio": "232",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Lucha",
-      "descripcion_breve": "sfdsfsdfdfs",
-      "descripcion_amplia": "fdsfdsdsfdsf",
-      "desarrollador": "dsfsdfsd",
-      "requisitos_minimos": "dfssdfsdf",
-      "id": "G0Fnaf0"
+      "categoria": "Puzzle",
+      "descripcion_breve": "sadasddsaadsad",
+      "descripcion_amplia": "sadsadadsads",
+      "desarrollador": "daadsasads",
+      "requisitos_minimos": "adsadsdas",
+      "id": 1
     }
   ]
 }
