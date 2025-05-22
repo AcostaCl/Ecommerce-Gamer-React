@@ -2,11 +2,21 @@ import { Button } from "react-bootstrap";
 import { BsPencilSquare } from "react-icons/bs";
 import { FaRegTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
-import { borrarProductoAPI } from "../../helpers/queries";
+import { borrarProductoAPI, listarProductosAPI } from "../../helpers/queries";
 
-const ItemProducto = ({ producto }) => {
+const ItemProducto = ({ producto, setListaJuegos }) => {
   const borrarProducto = async () => {
     const respuesta = await borrarProductoAPI(producto.id);
+    if (respuesta.status === 200) {
+      const respuestaListaJuegos = await listarProductosAPI();
+      if (respuestaListaJuegos.status === 200) {
+        const datos = await respuestaListaJuegos.json();
+        setListaJuegos(datos);
+      }
+      alert("El producto fue eliminado correctamente");
+    } else {
+      alert("Ocurrió un error, intente esta operación en unos minutos");
+    }
   };
 
   return (

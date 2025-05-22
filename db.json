@@ -1,37 +1,26 @@
 {
   "productos": [
     {
-      "nombreProducto": "the legend of zelda",
-      "precio": "432",
+      "nombreProducto": "asdasdasads",
+      "precio": "3223",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Plataformas",
-      "descripcion_breve": "es un juego",
-      "descripcion_amplia": "es un juego de arcade",
-      "desarrollador": "nintendo",
-      "requisitos_minimos": "w7 4 gb ram",
-      "id": "ZwjSHwT"
+      "categoria": "Puzzle",
+      "descripcion_breve": "dsadsaadsdasda",
+      "descripcion_amplia": "adsdasadsdas",
+      "desarrollador": "addaad",
+      "requisitos_minimos": "adadad",
+      "id": "IqEWub4"
     },
     {
-      "nombreProducto": "nose3",
-      "precio": "2323",
+      "nombreProducto": "dsaaddsasadads",
+      "precio": "324",
       "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Arcade",
-      "descripcion_breve": "fddsfdf",
-      "descripcion_amplia": "dfsfsdsdfs",
-      "desarrollador": "dfsfdsdffd",
-      "requisitos_minimos": "dfsdfsdfsfdsfd",
-      "id": "Xq2fnPq"
-    },
-    {
-      "nombreProducto": "nose4",
-      "precio": "600",
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Plataformas",
-      "descripcion_breve": "ddasadddadasasdassaddsadasdasdasdasadadasdsada",
-      "descripcion_amplia": "sadsadasdsasaddasas",
-      "desarrollador": "sadasdasdasd",
-      "requisitos_minimos": "adsasdd",
-      "id": "Ox9TVDA"
+      "categoria": "Lucha",
+      "descripcion_breve": "sfdsfsdfdfs",
+      "descripcion_amplia": "fdsfdsdsfdsf",
+      "desarrollador": "dsfsdfsd",
+      "requisitos_minimos": "dfssdfsdf",
+      "id": "G0Fnaf0"
     }
   ]
 }
