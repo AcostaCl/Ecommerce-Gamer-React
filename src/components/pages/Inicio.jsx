@@ -7,6 +7,7 @@ import { listarProductosAPI } from "../helpers/queries";
 import { IoMdPricetags } from "react-icons/io";
 import { MdLaptopChromebook } from "react-icons/md";
 import { FaGamepad } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Inicio = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
@@ -94,48 +95,56 @@ const Inicio = () => {
             <hr className="h2-inicio" />
             <Row>
               <Col md={3}>
-                <Card className="bg-dark text-white category-card border-0 mb-3">
-                  <Card.Img
-                    src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
-                    alt="Arcade"
-                  />
-                  <Card.ImgOverlay className="d-flex align-items-end p-2">
-                    <Card.Title>Arcade</Card.Title>
-                  </Card.ImgOverlay>
-                </Card>
+                <Link to={"*"}>
+                  <Card className="bg-dark text-white category-card border-0 mb-3">
+                    <Card.Img
+                      src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
+                      alt="Arcade"
+                    />
+                    <Card.ImgOverlay className="d-flex align-items-end p-2">
+                      <Card.Title>Arcade</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Link>
               </Col>
               <Col md={3}>
-                <Card className="bg-dark text-white category-card border-0 mb-3">
-                  <Card.Img
-                    src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
-                    alt="Plataformas"
-                  />
-                  <Card.ImgOverlay className="d-flex align-items-end p-2">
-                    <Card.Title>Plataformas</Card.Title>
-                  </Card.ImgOverlay>
-                </Card>
+                <Link to={"*"}>
+                  <Card className="bg-dark text-white category-card border-0 mb-3">
+                    <Card.Img
+                      src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
+                      alt="Plataformas"
+                    />
+                    <Card.ImgOverlay className="d-flex align-items-end p-2">
+                      <Card.Title>Plataformas</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Link>
               </Col>
               <Col md={3}>
-                <Card className="bg-dark text-white category-card border-0 mb-3">
-                  <Card.Img
-                    src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
-                    alt="Aventura"
-                  />
-                  <Card.ImgOverlay className="d-flex align-items-end p-2">
-                    <Card.Title>Aventura</Card.Title>
-                  </Card.ImgOverlay>
-                </Card>
+                <Link to={"*"}>
+                  <Card className="bg-dark text-white category-card border-0 mb-3">
+                    <Card.Img
+                      src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
+                      alt="Aventura"
+                    />
+                    <Card.ImgOverlay className="d-flex align-items-end p-2">
+                      <Card.Title>Aventura</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Link>
               </Col>
               <Col md={3}>
-                <Card className="bg-dark text-white category-card border-0 mb-3">
-                  <Card.Img
-                    src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
-                    alt="Lucha"
-                  />
-                  <Card.ImgOverlay className="d-flex align-items-end p-2">
-                    <Card.Title>Lucha</Card.Title>
-                  </Card.ImgOverlay>
-                </Card>
+                <Link to={"*"}>
+                  <Card className="bg-dark text-white category-card border-0 mb-3">
+                    <Card.Img
+                      src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
+                      alt="Lucha"
+                    />
+                    <Card.ImgOverlay className="d-flex align-items-end p-2">
+                      <Card.Title>Lucha</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Link>
               </Col>
             </Row>
           </Container>
