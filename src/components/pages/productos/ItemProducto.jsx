@@ -12,7 +12,7 @@ const ItemProducto = ({ producto }) => {
       <td className="text-center">
         <img
           src={producto.imagen}
-          className="img-thumbnail w-50"
+          className="w-50"
           alt={producto.nombreProducto}
         />
       </td>
