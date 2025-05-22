@@ -1,15 +1,92 @@
 {
   "productos": [
     {
-      "nombreProducto": "daadsdasads",
-      "precio": "232",
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "nombreProducto": "The Legend of Zelda (1986)",
+      "precio": "3450",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/02/569022-legend-zelda-analisis-retro.jpg?tf=3840x",
+      "categoria": "Aventura",
+      "descripcion_breve": "Aventura de exploración con acertijos.",
+      "descripcion_amplia": "Link debe recolectar fragmentos de la Trifuerza para salvar a la princesa Zelda del malvado Ganon.",
+      "desarrollador": "Nintendo",
+      "requisitos_minimos": "NES o emulador",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Super Mario Bros (1985)",
+      "precio": "5000",
+      "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_SuperMarioBros.jpg",
+      "categoria": "Plataformas",
+      "descripcion_breve": "El icónico plataformas de Mario.",
+      "descripcion_amplia": "Mario recorre el Reino Champiñón salvando a la princesa Peach, con saltos precisos y enemigos variados.",
+      "desarrollador": "Nintendo",
+      "requisitos_minimos": "NES o emulador",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Final Fantasy IV (1991)",
+      "imagen": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1173800/capsule_616x353.jpg?t=1746071127",
+      "categoria": "JRPG",
+      "descripcion_breve": "Aventura de redención y magia.",
+      "descripcion_amplia": "Cecil, un caballero oscuro, inicia una épica historia de redención en un mundo de cristales y traición.",
+      "desarrollador": "Square",
+      "requisitos_minimos": "SNES o emulador",
+      "precio": "6000",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Pac-Man (1980)",
+      "precio": "3400",
+      "imagen": "https://s3.amazonaws.com/rtvc-assets-senalcolombia.gov.co/s3fs-public/inline-images/juego-pacman-origenes-historia-cultura-pop-1.jpg",
+      "categoria": "Arcade",
+      "descripcion_breve": "Come puntos y evita fantasmas.",
+      "descripcion_amplia": "Pac-Man debe limpiar el laberinto sin ser atrapado, con mecánicas simples pero adictivas.",
+      "desarrollador": "Namco",
+      "requisitos_minimos": "Arcade / MAME",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Street Fighter II (1991)",
+      "precio": "7000",
+      "imagen": "https://i.ytimg.com/vi/n-1iD-pHJ60/maxresdefault.jpg",
+      "categoria": "Lucha",
+      "descripcion_breve": "Combates 1v1 con luchadores únicos.",
+      "descripcion_amplia": "Ryu, Chun-Li y otros luchadores viajan el mundo en un torneo lleno de habilidades especiales y combos.",
+      "desarrollador": "Capcom",
+      "requisitos_minimos": "Arcade, SNES, Genesis",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Tetris (1984)",
+      "precio": "1500",
+      "imagen": "https://www.retrogames.cz/games/136/NES_01.gif",
       "categoria": "Puzzle",
-      "descripcion_breve": "sadasddsaadsad",
-      "descripcion_amplia": "sadsadadsads",
-      "desarrollador": "daadsasads",
-      "requisitos_minimos": "adsadsdas",
-      "id": 1
+      "descripcion_breve": "Acomoda piezas para formar líneas.",
+      "descripcion_amplia": "Clásico puzzle donde el jugador debe organizar piezas llamadas \"tetrominós\" para crear filas completas.",
+      "desarrollador": "Alexey Pajitnov",
+      "requisitos_minimos": "Multiplataforma",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Donkey Kong (1981)",
+      "precio": "3400",
+      "imagen": "https://i.ytimg.com/vi/rYNMatF5hcU/sddefault.jpg",
+      "categoria": "Arcade",
+      "descripcion_breve": "Mario debe rescatar a Pauline",
+      "descripcion_amplia": "Mario escala plataformas mientras esquiva barriles lanzados por Donkey Kong en este clásico arcade.",
+      "desarrollador": "Nintendo",
+      "requisitos_minimos": "Arcade / Emulador",
+      "id": 8
+    },
+    {
+      "nombreProducto": "Castlevania (1986)",
+      "precio": "5000",
+      "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/game_boy_advance_7/SI_GBA_Castlevania_image1600w.jpg",
+      "categoria": "Plataformas",
+      "descripcion_breve": "Caza vampiros en un castillo maldito.",
+      "descripcion_amplia": "Simon Belmont usa su látigo para derrotar monstruos sobrenaturales y llegar hasta Drácula.",
+      "desarrollador": "Konami",
+      "requisitos_minimos": "NES o emulador",
+      "id": 9
     }
   ]
 }
