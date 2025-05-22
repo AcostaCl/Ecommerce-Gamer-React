@@ -19,7 +19,7 @@ const ItemProducto = ({ producto }) => {
       <td>{producto.descripcion_breve}</td>
       <td>{producto.desarrollador}</td>
       <td className="text-center">
-        <Button variant="warning" className="me-lg-2">
+        <Button variant="warning" className="mb-2">
           <BsPencilSquare />
         </Button>
         <Button variant="danger">
