@@ -25,3 +25,16 @@ export const listarProductosAPI = async () => {
     return false;
   }
 };
+
+export const borrarProductoAPI = async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/productos/", +id, {
+      method: "DELETE",
+    });
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+};
