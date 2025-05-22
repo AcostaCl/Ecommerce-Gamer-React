@@ -5,7 +5,7 @@ import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
 import { Link } from "react-router";
 const Footer = () => {
   return (
-    <footer className="footer-custom text-white py-4 ">
+    <footer className="footer-custom text-white py-4">
       <Container>
         <Row className="align-items-center text-center text-md-start">
           <Col md={3} className="mb-4 mb-md-0">

@@ -1,9 +1,13 @@
-import { Carousel, Form, Container, Row } from "react-bootstrap";
+import { Carousel, Form, Container, Row, Col } from "react-bootstrap";
 import banner from "../../img/banner1.png";
 import "../../styles/Inicio.css";
 import CardProducto from "./productos/CardProducto";
 import { useEffect, useState } from "react";
 import { listarProductosAPI } from "../helpers/queries";
+import { IoMdPricetags } from "react-icons/io";
+import { MdLaptopChromebook } from "react-icons/md";
+import { FaGamepad } from "react-icons/fa";
+
 const Inicio = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
 
@@ -60,6 +64,31 @@ const Inicio = () => {
                 ></CardProducto>
               ))}
             </Row>
+            <article className="bg-inicio text-white py-4 mt-5">
+              <Row className="text-center">
+                <Col md={4}>
+                  <MdLaptopChromebook size={30} className="mb-2" />
+                  <h6 className="fw-bold">Catálogo en expansión</h6>
+                  <p className="mb-0">Agregamos nuevos clásicos cada semana.</p>
+                </Col>
+                <Col md={4}>
+                  <IoMdPricetags size={30} className="mb-2" />
+                  <h6 className="fw-bold">Descuentos</h6>
+                  <p className="mb-0">
+                    Ahorrá un 25% pagando por transferencia bancaria.
+                    ¡Aprovechalo!
+                  </p>
+                </Col>
+                <Col md={4}>
+                  <FaGamepad size={30} className="mb-2" />
+                  <h6 className="fw-bold">Compatible</h6>
+                  <p className="mb-0">
+                    Juegos listos para correr en tu PC o en tu emulador
+                    favorito. Fácil de instalar y jugar.
+                  </p>
+                </Col>
+              </Row>
+            </article>
           </Container>
         </article>
       </section>
