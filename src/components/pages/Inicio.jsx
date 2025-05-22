@@ -95,55 +95,66 @@ const Inicio = () => {
             <hr className="h2-inicio" />
             <Row>
               <Col md={3}>
-                <Link to={"*"}>
-                  <Card className="bg-dark text-white category-card border-0 mb-3">
-                    <Card.Img
+                <Link to="*" className="text-decoration-none">
+                  <div className="category-card mb-3">
+                    <img
                       src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
                       alt="Arcade"
+                      className="category-card-img"
                     />
-                    <Card.ImgOverlay className="d-flex align-items-end p-2">
-                      <Card.Title>Arcade</Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
+                    <div className="category-card-overlay">
+                      <h5>Arcade</h5>
+                      <p>Máquinas retro clásicas</p>
+                    </div>
+                  </div>
                 </Link>
               </Col>
+
               <Col md={3}>
-                <Link to={"*"}>
-                  <Card className="bg-dark text-white category-card border-0 mb-3">
-                    <Card.Img
+                <Link to="*" className="text-decoration-none">
+                  <div className="category-card mb-3">
+                    <img
                       src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
                       alt="Plataformas"
+                      className="category-card-img"
                     />
-                    <Card.ImgOverlay className="d-flex align-items-end p-2">
-                      <Card.Title>Plataformas</Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
+                    <div className="category-card-overlay">
+                      <h5>Plataformas</h5>
+                      <p>Saltos y aventuras pixeladas</p>
+                    </div>
+                  </div>
                 </Link>
               </Col>
+
               <Col md={3}>
-                <Link to={"*"}>
-                  <Card className="bg-dark text-white category-card border-0 mb-3">
-                    <Card.Img
+                <Link to="*" className="text-decoration-none">
+                  <div className="category-card mb-3">
+                    <img
                       src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
                       alt="Aventura"
+                      className="category-card-img"
                     />
-                    <Card.ImgOverlay className="d-flex align-items-end p-2">
-                      <Card.Title>Aventura</Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
+                    <div className="category-card-overlay">
+                      <h5>Aventura</h5>
+                      <p>Historias para explorar</p>
+                    </div>
+                  </div>
                 </Link>
               </Col>
+
               <Col md={3}>
-                <Link to={"*"}>
-                  <Card className="bg-dark text-white category-card border-0 mb-3">
-                    <Card.Img
+                <Link to="*" className="text-decoration-none">
+                  <div className="category-card mb-3">
+                    <img
                       src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
                       alt="Lucha"
+                      className="category-card-img"
                     />
-                    <Card.ImgOverlay className="d-flex align-items-end p-2">
-                      <Card.Title>Lucha</Card.Title>
-                    </Card.ImgOverlay>
-                  </Card>
+                    <div className="category-card-overlay">
+                      <h5>Lucha</h5>
+                      <p>1v1 clásicos y combos retro</p>
+                    </div>
+                  </div>
                 </Link>
               </Col>
             </Row>
