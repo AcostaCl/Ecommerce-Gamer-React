@@ -1,7 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import { crearProductoAPI } from "../../helpers/queries";
+import { crearProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
+import { useParams } from "react-router";
+import { useEffect } from "react";
 const FormularioProducto = ({ crearProducto }) => {
   const {
     register,
@@ -10,6 +12,28 @@ const FormularioProducto = ({ crearProducto }) => {
     reset,
     setValue,
   } = useForm();
+  const { id } = useParams();
+  useEffect(() => {
+    if (crearProducto === false) {
+      cargarProducto();
+    }
+  }, []);
+
+  const cargarProducto = async () => {
+    const respuesta = await obtenerProductoAPI(id);
+    if (respuesta.status === 200) {
+      const datos = await respuesta.json();
+      console.log(datos);
+      setValue("nombreProducto", datos.nombreProducto);
+      setValue("precio", datos.precio);
+      setValue("imagen", datos.imagen);
+      setValue("categoria", datos.categoria);
+      setValue("descripcion_breve", datos.descripcion_breve);
+      setValue("descripcion_amplia", datos.descripcion_amplia);
+      setValue("desarrollador", datos.desarrollador);
+      setValue("requisitos_minimos", datos.requisitos_minimos);
+    }
+  };
 
   const onSubmit = async (juego) => {
     if (crearProducto) {

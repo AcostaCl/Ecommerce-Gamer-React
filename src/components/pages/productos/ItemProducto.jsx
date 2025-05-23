@@ -55,7 +55,10 @@ const ItemProducto = ({ producto, setListaJuegos }) => {
       </td>
       <td>{producto.desarrollador}</td>
       <td className="text-center">
-        <Link className="btn btn-warning mb-2" to={"/administrador/editar"}>
+        <Link
+          className="btn btn-warning mb-2"
+          to={`/administrador/editar/${producto.id}`}
+        >
           <BsPencilSquare />
         </Link>
         <Button variant="danger" onClick={borrarProducto}>

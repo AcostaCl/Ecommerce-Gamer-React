@@ -26,6 +26,17 @@ export const listarProductosAPI = async () => {
   }
 };
 
+export const obtenerProductoAPI = async (id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/productos/" + id);
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+};
+
 export const borrarProductoAPI = async (id) => {
   try {
     const respuesta = await fetch("http://localhost:3000/productos/" + id, {
