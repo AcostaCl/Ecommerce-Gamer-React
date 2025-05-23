@@ -11,8 +11,12 @@ import Carrito from "./components/pages/Carrito.jsx";
 import Login from "./components/pages/Login.jsx";
 import FormularioProducto from "./components/pages/productos/FormularioProducto.jsx";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const usuario = JSON.parse(sessionStorage.getItem("userKey")) || "";
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
+
   return (
     <>
       <BrowserRouter>
@@ -28,7 +32,10 @@ function App() {
             element={<BotonArrepentimiento />}
           />
           <Route path="/carrito" element={<Carrito />} />
-          <Route path="/login" element={<Login />} />
+          <Route
+            path="/login"
+            element={<Login setUsuarioLogueado={setUsuarioLogueado} />}
+          />
           <Route
             path="/administrador/crear"
             element={<FormularioProducto crearProducto={true} />}

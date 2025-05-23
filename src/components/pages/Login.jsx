@@ -3,17 +3,26 @@ import { useForm } from "react-hook-form";
 import { Button, Form, Card, InputGroup } from "react-bootstrap";
 import { IoIosMail } from "react-icons/io";
 import { TbLockPassword } from "react-icons/tb";
+import { login } from "../helpers/queries";
+import { useNavigate } from "react-router";
 
-function Login() {
+function Login({ setUsuarioLogueado }) {
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
+  const navegacion = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log("Datos válidos:", data);
+  const onSubmit = (usuario) => {
+    if (login(usuario)) {
+      setUsuarioLogueado(usuario);
+      alert("Bienvenido");
+      navegacion("/administrador");
+    } else {
+      alert("Email o contraseña incorrecta");
+    }
   };
 
   return (
