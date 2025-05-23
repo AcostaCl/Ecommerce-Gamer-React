@@ -29,7 +29,14 @@ function App() {
           />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/administrador/crear" element={<FormularioProducto />} />
+          <Route
+            path="/administrador/crear"
+            element={<FormularioProducto crearProducto={true} />}
+          />
+          <Route
+            path="/administrador/editar"
+            element={<FormularioProducto crearProducto={false} />}
+          />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

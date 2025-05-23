@@ -3,7 +3,7 @@ import { BsPencilSquare } from "react-icons/bs";
 import { FaRegTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { borrarProductoAPI, listarProductosAPI } from "../../helpers/queries";
-
+import { Link } from "react-router";
 const ItemProducto = ({ producto, setListaJuegos }) => {
   const borrarProducto = async () => {
     const result = await Swal.fire({
@@ -55,9 +55,9 @@ const ItemProducto = ({ producto, setListaJuegos }) => {
       </td>
       <td>{producto.desarrollador}</td>
       <td className="text-center">
-        <Button variant="warning" className="mb-2">
+        <Link className="btn btn-warning mb-2" to={"/administrador/editar"}>
           <BsPencilSquare />
-        </Button>
+        </Link>
         <Button variant="danger" onClick={borrarProducto}>
           <FaRegTrashAlt />
         </Button>

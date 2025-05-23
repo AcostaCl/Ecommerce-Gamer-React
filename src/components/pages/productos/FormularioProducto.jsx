@@ -2,7 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { crearProductoAPI } from "../../helpers/queries";
-const FormularioProducto = () => {
+const FormularioProducto = ({ crearProducto }) => {
   const {
     register,
     handleSubmit,
@@ -12,20 +12,24 @@ const FormularioProducto = () => {
   } = useForm();
 
   const onSubmit = async (juego) => {
-    console.log(juego);
-    const respuesta = await crearProductoAPI(juego);
-    if (respuesta.status === 201) {
-      Swal.fire({
-        title: "Se agregó el juego correctamente!",
-        icon: "success",
-      });
-      reset();
+    if (crearProducto) {
+      console.log(juego);
+      const respuesta = await crearProductoAPI(juego);
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "Se agregó el juego correctamente!",
+          icon: "success",
+        });
+        reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title:
+            "Ocurrió un error, volve a intentar esta operación en unos minutos",
+        });
+      }
     } else {
-      Swal.fire({
-        icon: "error",
-        title:
-          "Ocurrió un error, volve a intentar esta operación en unos minutos",
-      });
+      console.log("aqui tengo que editar");
     }
   };
   return (
