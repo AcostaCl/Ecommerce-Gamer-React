@@ -99,7 +99,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 text-light" controlId="formPrecio">
             <Form.Label>Precio*</Form.Label>
@@ -118,7 +117,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 text-light" controlId="formImagen">
             <Form.Label>Imagen URL*</Form.Label>
@@ -134,7 +132,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 text-light" controlId="formCategoria">
             <Form.Label>Categoría*</Form.Label>
@@ -152,7 +149,6 @@ const FormularioProducto = ({ crearProducto }) => {
               <option value="Puzzle">Puzzle</option>
               <option value="Arcade">Arcade</option>
             </Form.Select>
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group
             className="mb-3 text-light"
@@ -177,7 +173,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group
             className="mb-3 text-light"
@@ -202,7 +197,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 text-light" controlId="formDesarrollador">
             <Form.Label>Desarrollador*</Form.Label>
@@ -221,7 +215,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 text-light" controlId="formRequisitos">
             <Form.Label>Requisitos del sistema*</Form.Label>
@@ -240,7 +233,6 @@ const FormularioProducto = ({ crearProducto }) => {
                 },
               })}
             />
-            <Form.Text className="text-danger">{errors.message}</Form.Text>
           </Form.Group>
           <Button type="submit" variant="primary">
             Guardar

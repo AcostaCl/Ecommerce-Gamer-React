@@ -1,0 +1,60 @@
+.login-background {
+  background: url("../img/background-vitbite.png") no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background-color: #07051a;
+  border-radius: 12px;
+  border: 3px solid #120d44;
+  width: 400px;
+  padding: 30px;
+}
+
+.neon-titulo-login {
+  color: #00ffe7;
+  text-shadow: 0 0 5px #00ffe7;
+  font-size: 30px;
+}
+
+.neon-button-login {
+  background-color: #7313d2;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 17px;
+}
+
+.neon-button-login:hover {
+  background-color: #3d0a70;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #2f0c51;
+}
+
+.custom-icon {
+  background-color: #0c1020;
+  border: 2px solid #120d44;
+  color: #15cdba;
+  border-right: none;
+  font-size: 18px;
+}
+
+.custom-input-control {
+  background-color: #0c1020 !important;
+  color: white !important;
+  border: 2px solid #120d44 !important;
+  border-left: none !important;
+  border-radius: 0 6px 6px 0 !important;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
