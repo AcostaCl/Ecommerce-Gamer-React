@@ -54,7 +54,6 @@ function Login() {
                 </Form.Control.Feedback>
               </InputGroup>
             </Form.Group>
-
             <Form.Group className="mb-3" controlId="formGroupPassword">
               <Form.Label className="text-light">Contraseña</Form.Label>
               <InputGroup>
