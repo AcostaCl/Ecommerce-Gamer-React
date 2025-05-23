@@ -39,7 +39,7 @@ function Login({ setUsuarioLogueado }) {
                 </InputGroup.Text>
                 <Form.Control
                   type="email"
-                  placeholder="Correo electrónico"
+                  placeholder="Ej: pizza123@gmail.com"
                   className="custom-input-control"
                   isInvalid={!!errors.email}
                   {...register("email", {
@@ -71,7 +71,7 @@ function Login({ setUsuarioLogueado }) {
                 </InputGroup.Text>
                 <Form.Control
                   type="password"
-                  placeholder="Contraseña"
+                  placeholder="Ej: pizza123"
                   className="custom-input-control"
                   isInvalid={!!errors.password}
                   {...register("password", {
@@ -93,7 +93,7 @@ function Login({ setUsuarioLogueado }) {
             </Form.Group>
 
             <Button type="submit" className="neon-button-login w-100">
-              Iniciar sesión
+              Iniciar
             </Button>
           </Form>
         </Card.Body>
