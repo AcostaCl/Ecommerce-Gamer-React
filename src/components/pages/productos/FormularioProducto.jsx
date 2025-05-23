@@ -8,6 +8,7 @@ import {
 } from "../../helpers/queries";
 import { useParams } from "react-router";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
 const FormularioProducto = ({ crearProducto }) => {
   const {
     register,
@@ -17,6 +18,8 @@ const FormularioProducto = ({ crearProducto }) => {
     setValue,
   } = useForm();
   const { id } = useParams();
+  const navegacion = useNavigate();
+
   useEffect(() => {
     if (crearProducto === false) {
       cargarProducto();
@@ -63,6 +66,7 @@ const FormularioProducto = ({ crearProducto }) => {
           title: "Se actualizó el producto correctamente",
           icon: "success",
         });
+        navegacion("/administrador");
       } else {
         Swal.fire({
           icon: "error",
