@@ -49,3 +49,20 @@ export const borrarProductoAPI = async (id) => {
     return false;
   }
 };
+
+export const editarProductoAPI = async (productoEditado, id) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/productos/" + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(productoEditado),
+    });
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+};

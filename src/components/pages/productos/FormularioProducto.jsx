@@ -1,7 +1,11 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import { crearProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
+import {
+  crearProductoAPI,
+  editarProductoAPI,
+  obtenerProductoAPI,
+} from "../../helpers/queries";
 import { useParams } from "react-router";
 import { useEffect } from "react";
 const FormularioProducto = ({ crearProducto }) => {
@@ -49,11 +53,23 @@ const FormularioProducto = ({ crearProducto }) => {
         Swal.fire({
           icon: "error",
           title:
-            "Ocurrió un error, volve a intentar esta operación en unos minutos",
+            "Ocurrió un error, volvé a intentar esta operación en unos minutos",
         });
       }
     } else {
-      console.log("aqui tengo que editar");
+      const respuesta = await editarProductoAPI(juego, id);
+      if (respuesta.status === 200) {
+        Swal.fire({
+          title: "Se actualizó el producto correctamente",
+          icon: "success",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title:
+            "Ocurrió un error, volvé a intentar esta operación en unos minutos",
+        });
+      }
     }
   };
   return (
