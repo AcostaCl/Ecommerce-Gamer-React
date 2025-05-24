@@ -23,19 +23,23 @@ const Categorias = () => {
   }, [categoriaNombre]);
 
   return (
-    <Container className="mt-5">
-      <h2 className="display-6">Categoría: {categoriaNombre}</h2>
-      <hr />
-      <Row>
-        {productos.length > 0 ? (
-          productos.map((producto) => (
-            <CardProducto key={producto.id} producto={producto} />
-          ))
-        ) : (
-          <p>No hay productos en esta categoría.</p>
-        )}
-      </Row>
-    </Container>
+    <div className="detalleproducto-fondo">
+      <Container>
+        <h2 className="display-6 text-info py-3">
+          Categoría: {categoriaNombre}
+        </h2>
+        <hr className="text-info" />
+        <Row>
+          {productos.length > 0 ? (
+            productos.map((producto) => (
+              <CardProducto key={producto.id} producto={producto} />
+            ))
+          ) : (
+            <p>No hay productos en esta categoría.</p>
+          )}
+        </Row>
+      </Container>
+    </div>
   );
 };
 
