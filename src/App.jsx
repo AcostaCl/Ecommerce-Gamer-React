@@ -27,7 +27,7 @@ function App() {
         ></Menu>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/detalle-producto" element={<DetalleProducto />} />
+          <Route path="/detalle-producto/:id" element={<DetalleProducto />} />
           <Route
             path="/administrador/*"
             element={

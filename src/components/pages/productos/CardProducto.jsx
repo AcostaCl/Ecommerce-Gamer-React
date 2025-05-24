@@ -1,4 +1,4 @@
-import { Col, Card } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { Link } from "react-router";
 import "../../../styles/CardProducto.css";
 const CardProducto = ({ producto }) => {
@@ -15,7 +15,12 @@ const CardProducto = ({ producto }) => {
           </div>
           <p>{producto.descripcion_breve}</p>
           <div className="detalle">
-            <button>Ver más</button>
+            <Link
+              className="btn btn-detalle"
+              to={"/detalle-producto/" + producto.id}
+            >
+              Ver más
+            </Link>
           </div>
         </div>
       </div>

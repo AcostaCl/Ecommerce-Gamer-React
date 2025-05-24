@@ -90,7 +90,7 @@
   right: 20px;
 }
 
-.detalle button {
+.detalle .btn-detalle {
   padding: 10px 20px;
   border-radius: 7px;
   border: none;
@@ -102,8 +102,9 @@
   transition: transform 0.3s ease;
 }
 
-.detalle button:hover {
+.detalle .btn-detalle:hover {
   transform: scale(1.05);
+  background-color: var(--textColor);
 }
 
 @media (max-width: 768px) {
