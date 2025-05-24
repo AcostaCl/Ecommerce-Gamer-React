@@ -90,3 +90,34 @@
 .category-card-overlay p {
   margin: 0;
 }
+
+.consulta-bar {
+  background-color: #151536;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-top: 2px solid #0a9c9c;
+  box-shadow: 0px -2px 10px #00ffff33;
+}
+
+.consulta-text {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.boton-bar {
+  color: #f0f0f5;
+  font-weight: bold;
+  border: 2px solid #0c9a9a;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px #00ffff88;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.boton-bar:hover {
+  background: linear-gradient(145deg, #19a1a1, #00ccff);
+  color: #121212;
+  border-color: #0f8282;
+  box-shadow: 0 0 10px #149e9e88;
+}

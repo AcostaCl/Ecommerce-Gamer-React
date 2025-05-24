@@ -141,7 +141,6 @@ const Inicio = () => {
                   </div>
                 </Link>
               </Col>
-
               <Col md={3}>
                 <Link to="*" className="text-decoration-none">
                   <div className="category-card mb-4">
@@ -157,6 +156,17 @@ const Inicio = () => {
                   </div>
                 </Link>
               </Col>
+              <article className="consulta-bar mt-4 ">
+                <Container className="text-center">
+                  <p className="consulta-text text-light">
+                    Por cualquier consulta o sugerencia dirigirse al formulario
+                    de contacto.
+                  </p>
+                  <Link to={"/FormularioContacto"} className="boton-bar">
+                    Ir al formulario
+                  </Link>
+                </Container>
+              </article>
             </Row>
           </Container>
         </article>
