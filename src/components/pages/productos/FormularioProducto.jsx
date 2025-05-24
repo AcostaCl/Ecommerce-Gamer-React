@@ -30,7 +30,6 @@ const FormularioProducto = ({ crearProducto }) => {
     const respuesta = await obtenerProductoAPI(id);
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
-      console.log(datos);
       setValue("nombreProducto", datos.nombreProducto);
       setValue("precio", datos.precio);
       setValue("imagen", datos.imagen);
@@ -44,7 +43,6 @@ const FormularioProducto = ({ crearProducto }) => {
 
   const onSubmit = async (juego) => {
     if (crearProducto) {
-      console.log(juego);
       const respuesta = await crearProductoAPI(juego);
       if (respuesta.status === 201) {
         Swal.fire({

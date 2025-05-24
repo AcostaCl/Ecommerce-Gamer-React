@@ -13,7 +13,7 @@ import "./App.css";
 import { useState } from "react";
 import ProtectorRutas from "./components/routes/ProtectorRutas.jsx";
 import RutasAdmin from "./components/routes/RutasAdmin.jsx";
-
+import Categorias from "./components/pages/Categorias.jsx";
 function App() {
   const usuario = JSON.parse(sessionStorage.getItem("userKey")) || "";
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
@@ -28,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/detalle-producto/:id" element={<DetalleProducto />} />
+
           <Route
             path="/administrador/*"
             element={
@@ -48,6 +49,7 @@ function App() {
             path="/login"
             element={<Login setUsuarioLogueado={setUsuarioLogueado} />}
           />
+          <Route path="/categoria/:categoriaNombre" element={<Categorias />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

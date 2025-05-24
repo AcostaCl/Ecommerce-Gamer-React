@@ -11,6 +11,8 @@ import { Link } from "react-router";
 
 const Inicio = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
+  const [filtro, setFiltro] = useState("");
+  const [resultadosFiltrados, setResultadosFiltrados] = useState([]);
 
   useEffect(() => {
     consultarAPI();
@@ -21,9 +23,25 @@ const Inicio = () => {
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
       setListaJuegos(datos);
+      setResultadosFiltrados(datos);
     } else {
-      alert("Ocurrió un error, intenta esta operacion en unos minutos");
+      alert("Ocurrió un error, intenta esta operación en unos minutos");
     }
+  };
+
+  const handleBusqueda = (e) => {
+    const valor = e.target.value;
+    setFiltro(valor);
+
+    const filtroLower = valor.toLowerCase();
+
+    const filtrados = listaJuegos.filter((producto) => {
+      const nombre = producto.nombreProducto?.toLowerCase() || "";
+      const categoria = producto.categoria?.toLowerCase() || "";
+      return nombre.includes(filtroLower) || categoria.includes(filtroLower);
+    });
+
+    setResultadosFiltrados(filtrados);
   };
 
   return (
@@ -47,6 +65,8 @@ const Inicio = () => {
                     type="search"
                     placeholder="Buscar consolas, juegos..."
                     className="me-2 bg-transparent  neon-input"
+                    value={filtro}
+                    onChange={handleBusqueda}
                   />
                 </Form>
               </Carousel.Caption>
@@ -58,13 +78,17 @@ const Inicio = () => {
             <h2 className="display-6 h2-inicio">Nuestros Productos</h2>
             <hr className="h2-inicio" />
             <Row>
-              {listaJuegos.map((producto) => (
-                <CardProducto
-                  key={producto.id}
-                  producto={producto}
-                ></CardProducto>
-              ))}
+              {resultadosFiltrados.length > 0 ? (
+                resultadosFiltrados.map((producto) => (
+                  <CardProducto key={producto.id} producto={producto} />
+                ))
+              ) : (
+                <p className="text-white text-center">
+                  No se encontraron productos.
+                </p>
+              )}
             </Row>
+
             <hr className="h2-inicio" />
             <article className="bg-inicio text-white py-4 mt-5">
               <Row className="text-center">
@@ -95,7 +119,7 @@ const Inicio = () => {
             <hr className="h2-inicio" />
             <Row>
               <Col md={3}>
-                <Link to="*" className="text-decoration-none">
+                <Link to="/categoria/Arcade" className="text-decoration-none">
                   <div className="category-card mb-4">
                     <img
                       src="https://dameesos5.wordpress.com/wp-content/uploads/2016/01/25-mejores-juegos-arcade-80.jpg?w=800&h=463&crop=1"
@@ -111,7 +135,10 @@ const Inicio = () => {
               </Col>
 
               <Col md={3}>
-                <Link to="*" className="text-decoration-none">
+                <Link
+                  to="/categoria/Plataformas"
+                  className="text-decoration-none"
+                >
                   <div className="category-card mb-4">
                     <img
                       src="https://pressover.news/wp-content/uploads/2021/05/Foto-1-5.jpg"
@@ -127,7 +154,7 @@ const Inicio = () => {
               </Col>
 
               <Col md={3}>
-                <Link to="*" className="text-decoration-none">
+                <Link to="/categoria/Aventura" className="text-decoration-none">
                   <div className="category-card mb-4">
                     <img
                       src="https://i.blogs.es/20d2f6/supermariobros/650_1200.jpg"
@@ -141,8 +168,9 @@ const Inicio = () => {
                   </div>
                 </Link>
               </Col>
+
               <Col md={3}>
-                <Link to="*" className="text-decoration-none">
+                <Link to="/categoria/Lucha" className="text-decoration-none">
                   <div className="category-card mb-4">
                     <img
                       src="https://omniretro.com/wp-content/uploads/2019/03/clasicos-arcade.jpg"
