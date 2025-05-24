@@ -4,14 +4,39 @@ import "../../styles/Menu.css";
 import logo from "../../assets/logo-vitbite.png";
 import { NavLink, Link, useNavigate } from "react-router";
 import { MdLogout } from "react-icons/md";
-
+import Swal from "sweetalert2";
 const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
   const navegacion = useNavigate();
 
   const logout = () => {
-    sessionStorage.removeItem("userKey");
-    setUsuarioLogueado("");
-    navegacion("/");
+    Swal.fire({
+      title: "¿Estás seguro?",
+      text: "Tu sesión se cerrará",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, cerrar sesión",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Sesión cerrada",
+          text: "¡Hasta pronto!",
+          icon: "success",
+          showClass: {
+            popup: "animate__animated animate__fadeIn",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOut",
+          },
+        });
+
+        sessionStorage.removeItem("userKey");
+        setUsuarioLogueado("");
+        navegacion("/");
+      }
+    });
   };
   return (
     <div>
