@@ -83,3 +83,15 @@ export const login = (usuario) => {
     return false;
   }
 };
+
+export const obtenerProductosPorCategoriaAPI = async (categoria) => {
+  try {
+    const respuesta = await fetch(
+      `http://localhost:3000/productos?categoria=${categoria}`
+    );
+    return respuesta;
+  } catch (error) {
+    console.error("Error al obtener productos por categoría:", error);
+    return false;
+  }
+};
