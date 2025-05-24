@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Inicio from "./components/pages/Inicio";
-import Administrador from "./components/pages/Administrador";
 import Menu from "./components/common/Menu";
 import Footer from "./components/common/Footer";
 import AcercaDe from "./components/pages/AcercaDe";
@@ -9,7 +8,7 @@ import BotonArrepentimiento from "./components/pages/BotonArrepentimiento";
 import Error404 from "./components/pages/Error404";
 import Carrito from "./components/pages/Carrito.jsx";
 import Login from "./components/pages/Login.jsx";
-import FormularioProducto from "./components/pages/productos/FormularioProducto.jsx";
+import DetalleProducto from "./components/pages/DetalleProducto.jsx";
 import "./App.css";
 import { useState } from "react";
 import ProtectorRutas from "./components/routes/ProtectorRutas.jsx";
@@ -28,6 +27,7 @@ function App() {
         ></Menu>
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/detalle-producto" element={<DetalleProducto />} />
           <Route
             path="/administrador/*"
             element={
