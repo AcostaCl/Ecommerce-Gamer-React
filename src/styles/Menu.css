@@ -39,3 +39,22 @@
     0 0 100px #d172dd;
   color: rgb(184, 140, 184) !important;
 }
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  color: rgb(220, 188, 229);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #cf66dd, 0 0 25px #c976dc, 0 0 50px #d085cb,
+    0 0 100px #dd72d9;
+}
+
+.btn-menu:hover {
+  background-color: transparent;
+  border: none;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  color: #03e9f4;
+}

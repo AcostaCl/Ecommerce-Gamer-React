@@ -5,6 +5,7 @@ import { IoIosMail } from "react-icons/io";
 import { TbLockPassword } from "react-icons/tb";
 import { login } from "../helpers/queries";
 import { useNavigate } from "react-router";
+import Swal from "sweetalert2";
 
 function Login({ setUsuarioLogueado }) {
   const {
@@ -15,13 +16,22 @@ function Login({ setUsuarioLogueado }) {
   } = useForm();
   const navegacion = useNavigate();
 
-  const onSubmit = (usuario) => {
+  const onSubmit = async (usuario) => {
     if (login(usuario)) {
-      setUsuarioLogueado(usuario);
-      alert("Bienvenido");
+      setUsuarioLogueado(usuario.email);
+      await Swal.fire({
+        title: "¡Bienvenido!",
+        text: "Has iniciado sesión correctamente",
+        icon: "success",
+      });
+
       navegacion("/administrador");
     } else {
-      alert("Email o contraseña incorrecta");
+      Swal.fire({
+        title: "Error",
+        text: "Email o contraseña incorrecta",
+        icon: "error",
+      });
     }
   };
 
