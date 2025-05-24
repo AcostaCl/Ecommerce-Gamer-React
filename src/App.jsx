@@ -12,6 +12,8 @@ import Login from "./components/pages/Login.jsx";
 import FormularioProducto from "./components/pages/productos/FormularioProducto.jsx";
 import "./App.css";
 import { useState } from "react";
+import ProtectorRutas from "./components/routes/ProtectorRutas.jsx";
+import RutasAdmin from "./components/routes/RutasAdmin.jsx";
 
 function App() {
   const usuario = JSON.parse(sessionStorage.getItem("userKey")) || "";
@@ -26,7 +28,14 @@ function App() {
         ></Menu>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/administrador" element={<Administrador />} />
+          <Route
+            path="/administrador/*"
+            element={
+              <ProtectorRutas>
+                <RutasAdmin />
+              </ProtectorRutas>
+            }
+          />
           <Route path="*" element={<Error404 />} />
           <Route path="/acercade" element={<AcercaDe />} />
           <Route path="/formulariocontacto" element={<FormularioContacto />} />
@@ -38,14 +47,6 @@ function App() {
           <Route
             path="/login"
             element={<Login setUsuarioLogueado={setUsuarioLogueado} />}
-          />
-          <Route
-            path="/administrador/crear"
-            element={<FormularioProducto crearProducto={true} />}
-          />
-          <Route
-            path="/administrador/editar/:id"
-            element={<FormularioProducto crearProducto={false} />}
           />
         </Routes>
         <Footer></Footer>

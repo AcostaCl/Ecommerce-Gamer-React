@@ -87,17 +87,6 @@
       "desarrollador": "Konami",
       "requisitos_minimos": "NES o emulador",
       "id": 9
-    },
-    {
-      "nombreProducto": "hola",
-      "precio": "3443",
-      "imagen": "https://images.pexels.com/photos/17579687/pexels-photo-17579687/free-photo-of-mar-barcos-puerto-oporto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Puzzle",
-      "descripcion_breve": "dfssdffdsdsf",
-      "descripcion_amplia": "dsfdsfdfssfdsfdfdssfd",
-      "desarrollador": "sdffdsfsd",
-      "requisitos_minimos": "sdfsdfdf",
-      "id": 10
     }
   ]
 }
