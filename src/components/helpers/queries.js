@@ -7,7 +7,6 @@ export const crearProductoAPI = async (productoNuevo) => {
       },
       body: JSON.stringify(productoNuevo),
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.error(error);
@@ -18,7 +17,6 @@ export const crearProductoAPI = async (productoNuevo) => {
 export const listarProductosAPI = async () => {
   try {
     const respuesta = await fetch("http://localhost:3000/productos");
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.error(error);
@@ -29,7 +27,6 @@ export const listarProductosAPI = async () => {
 export const obtenerProductoAPI = async (id) => {
   try {
     const respuesta = await fetch("http://localhost:3000/productos/" + id);
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.error(error);
@@ -42,7 +39,6 @@ export const borrarProductoAPI = async (id) => {
     const respuesta = await fetch("http://localhost:3000/productos/" + id, {
       method: "DELETE",
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.error(error);
@@ -59,7 +55,6 @@ export const editarProductoAPI = async (productoEditado, id) => {
       },
       body: JSON.stringify(productoEditado),
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.error(error);
