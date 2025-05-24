@@ -44,12 +44,13 @@ const DetalleProducto = () => {
           <div className="mb-2 text-light">{producto.desarrollador}</div>
           <div className="text-info mb-3 fw-bold">{producto.categoria}</div>
           <h3 className="fw-bold mb-4 text-light">${producto.precio}</h3>
-          <Button size="lg" className="btn btn-info d-block mb-4 ">
-            Añadir al carrito
-          </Button>
+
           <div>
             <p className="mt-4 text-light">{producto.descripcion_amplia}</p>
           </div>
+          <Button size="md" className="btn btn-info d-block mb-4 ">
+            Agregar al carrito
+          </Button>
           <div>
             <h6 className="mt-4 text-info">DETALLES DEL JUEGO</h6>
             <ul>
@@ -65,7 +66,7 @@ const DetalleProducto = () => {
               <div className="text-light">{producto.requisitos_minimos}</div>
             </div>
           </div>
-          <Link to="/" className="text-decoration-none">
+          <Link to="/" className="text-info text-decoration-none">
             ← Volver a la tienda
           </Link>
         </Col>

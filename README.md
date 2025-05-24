@@ -7,7 +7,7 @@ Este es un proyecto de ecommerce para videojuegos construido con **React**. Incl
 ## 🚀 Tecnologías usadas
 
 - ⚛️ React (Vite)
-- 💅 CSS + Bootstrap (opcional)
+- 💅 CSS + Bootstrap
 - 🔄 JSON Server (simulación de API REST)
 - 💡 SweetAlert2 (para notificaciones)
 
