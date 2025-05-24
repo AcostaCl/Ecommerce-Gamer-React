@@ -43,7 +43,12 @@ const AcercaDe = () => {
           </Row>
           <Row className="align-items-center mb-5">
             <Col md={6}>
-              <img src={imagenAcercaDe} width={200} className="img-fluid" />
+              <img
+                src={imagenAcercaDe}
+                alt="desarrolladora web"
+                width={200}
+                className="img-fluid"
+              />
               <Card className="mt-4 shadow-sm card-acercade">
                 <Card.Body>
                   <blockquote className="blockquote mb-0">
