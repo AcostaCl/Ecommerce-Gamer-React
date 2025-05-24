@@ -27,23 +27,29 @@ const DetalleProducto = () => {
           <Button size="lg" className="btn btn-info d-block mb-4 ">
             Añadir al carrito
           </Button>
-          <p className="mt-4 text-light">
-            Explora un vasto mundo lleno de misterios y magia en Celestial Rift,
-            un RPG de mundo abierto con mecánicas únicas de combate y una
-            narrativa envolvente. Enfréntate a criaturas mitológicas, domina los
-            elementos y descubre los secretos de una civilización perdida. Ideal
-            para fans de Skyrim y Zelda: BOTW.
-          </p>
-          <h6 className="mt-4 text-info">DETALLES DEL JUEGO</h6>
-          <ul>
-            <li className="text-light">
-              Género: RPG / Mundo abierto / Aventura
-            </li>
-            <li className="text-light">Desarrollador: NovaCore Studios</li>
-          </ul>
-          <h6 className="mt-4 text-info">REQUISITOS DEL SISTEMA</h6>
-          <div className="d-flex flex-wrap gap-3 mt-2 mb-3">
-            <div className="text-light">Windows 10</div>
+          <div>
+            <p className="mt-4 text-light">
+              Explora un vasto mundo lleno de misterios y magia en Celestial
+              Rift, un RPG de mundo abierto con mecánicas únicas de combate y
+              una narrativa envolvente. Enfréntate a criaturas mitológicas,
+              domina los elementos y descubre los secretos de una civilización
+              perdida. Ideal para fans de Skyrim y Zelda: BOTW.
+            </p>
+          </div>
+          <div>
+            <h6 className="mt-4 text-info">DETALLES DEL JUEGO</h6>
+            <ul>
+              <li className="text-light">
+                Género: RPG / Mundo abierto / Aventura
+              </li>
+              <li className="text-light">Desarrollador: NovaCore Studios</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="mt-4 text-info">REQUISITOS DEL SISTEMA</h6>
+            <div className="d-flex flex-wrap gap-3 mt-2 mb-3">
+              <div className="text-light">Windows 10</div>
+            </div>
           </div>
           <Link to="/" className="text-decoration-none">
             ← Volver a la tienda
