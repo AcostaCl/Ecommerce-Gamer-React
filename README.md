@@ -74,8 +74,8 @@ Ecommerce-Gamer-React/
 │   ├── components/ componentes reutilizables
 │   ├── pages/ componentes principales
 │   ├── helpers/ funciones para las solicitudes a json-server
-│   ├── App.jsx configuración principal de rutas 
-│   ├── main.jsx punto de entrada 
+│   ├── App.jsx configuración principal de rutas
+│   ├── main.jsx punto de entrada
 ├── db.json ← Base de datos falsa para JSON Server
 ├── package.json
 ```
@@ -94,8 +94,10 @@ Ecommerce-Gamer-React/
 - Puedes modificar db.json para agregar más productos de prueba fácilmente.
 
 ## 💻 Autor
+
 Cl Acosta
 Repositorio: github.com/AcostaCl/Ecommerce-Gamer-React
 
 ## 📄 Licencia
+
 Este proyecto está bajo la licencia MIT.
