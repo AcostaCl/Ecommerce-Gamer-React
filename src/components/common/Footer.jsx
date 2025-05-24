@@ -64,7 +64,7 @@ const Footer = () => {
                 target="_blank"
                 aria-label="Twitter"
               >
-                <CiTwitter ook size={30} />
+                <CiTwitter size={30} />
               </a>
             </div>
             <div className="mt-2">
