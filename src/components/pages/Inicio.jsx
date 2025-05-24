@@ -11,6 +11,8 @@ import { Link } from "react-router";
 
 const Inicio = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
+  const [filtro, setFiltro] = useState("");
+  const [resultadosFiltrados, setResultadosFiltrados] = useState([]);
 
   useEffect(() => {
     consultarAPI();
@@ -21,9 +23,25 @@ const Inicio = () => {
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
       setListaJuegos(datos);
+      setResultadosFiltrados(datos);
     } else {
-      alert("Ocurrió un error, intenta esta operacion en unos minutos");
+      alert("Ocurrió un error, intenta esta operación en unos minutos");
     }
+  };
+
+  const handleBusqueda = (e) => {
+    const valor = e.target.value;
+    setFiltro(valor);
+
+    const filtroLower = valor.toLowerCase();
+
+    const filtrados = listaJuegos.filter((producto) => {
+      const nombre = producto.nombreProducto?.toLowerCase() || "";
+      const categoria = producto.categoria?.toLowerCase() || "";
+      return nombre.includes(filtroLower) || categoria.includes(filtroLower);
+    });
+
+    setResultadosFiltrados(filtrados);
   };
 
   return (
@@ -45,8 +63,10 @@ const Inicio = () => {
                 <Form className="d-flex w-75 form-custom">
                   <input
                     type="search"
-                    placeholder="Buscar categorías, juegos..."
+                    placeholder="Buscar consolas, juegos..."
                     className="me-2 bg-transparent  neon-input"
+                    value={filtro}
+                    onChange={handleBusqueda}
                   />
                 </Form>
               </Carousel.Caption>
@@ -58,13 +78,17 @@ const Inicio = () => {
             <h2 className="display-6 h2-inicio">Nuestros Productos</h2>
             <hr className="h2-inicio" />
             <Row>
-              {listaJuegos.map((producto) => (
-                <CardProducto
-                  key={producto.id}
-                  producto={producto}
-                ></CardProducto>
-              ))}
+              {resultadosFiltrados.length > 0 ? (
+                resultadosFiltrados.map((producto) => (
+                  <CardProducto key={producto.id} producto={producto} />
+                ))
+              ) : (
+                <p className="text-white text-center">
+                  No se encontraron productos.
+                </p>
+              )}
             </Row>
+
             <hr className="h2-inicio" />
             <article className="bg-inicio text-white py-4 mt-5">
               <Row className="text-center">
@@ -158,9 +182,9 @@ const Inicio = () => {
               </Col>
               <article className="consulta-bar mt-4 ">
                 <Container className="text-center">
-                  <p className="consulta-text text-light">
+                  <p className="consultar-bar text-light mb-4">
                     Por cualquier consulta o sugerencia dirigirse al formulario
-                    de contacto.
+                    de contacto
                   </p>
                   <Link to={"/FormularioContacto"} className="boton-bar">
                     Ir al formulario
