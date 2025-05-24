@@ -45,7 +45,7 @@ const Inicio = () => {
                 <Form className="d-flex w-75 form-custom">
                   <input
                     type="search"
-                    placeholder="Buscar categorías, juegos..."
+                    placeholder="Buscar consolas, juegos..."
                     className="me-2 bg-transparent  neon-input"
                   />
                 </Form>
@@ -158,9 +158,9 @@ const Inicio = () => {
               </Col>
               <article className="consulta-bar mt-4 ">
                 <Container className="text-center">
-                  <p className="consulta-text text-light">
+                  <p className="consultar-bar text-light mb-4">
                     Por cualquier consulta o sugerencia dirigirse al formulario
-                    de contacto.
+                    de contacto
                   </p>
                   <Link to={"/FormularioContacto"} className="boton-bar">
                     Ir al formulario
