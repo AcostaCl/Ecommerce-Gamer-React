@@ -1,3 +1,7 @@
 .detalleproducto-fondo {
   background-color: #030322;
 }
+
+.imagen-detalle {
+  max-height: 50vh;
+}

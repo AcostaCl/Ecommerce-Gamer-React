@@ -1,8 +1,27 @@
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { Link } from "react-router";
 import "../../styles/DetalleProducto.css";
-
+import { useParams } from "react-router";
+import { useEffect, useState } from "react";
+import { obtenerProductoAPI } from "../helpers/queries";
 const DetalleProducto = () => {
+  const { id } = useParams();
+  const [producto, setProducto] = useState({});
+
+  useEffect(() => {
+    obtenerProducto();
+  }, []);
+
+  const obtenerProducto = async () => {
+    const respuesta = await obtenerProductoAPI(id);
+    if (respuesta.status === 200) {
+      const datos = await respuesta.json();
+      setProducto(datos);
+    } else {
+      alert("Ocurrió un error, intente este paso en unos minutos");
+    }
+  };
+
   return (
     <Container fluid className="py-5 px-4 detalleproducto-fondo">
       <Row>
@@ -11,44 +30,39 @@ const DetalleProducto = () => {
           className="d-flex justify-content-center align-items-center"
         >
           <Image
-            src="https://www.recetasnestle.com.ar/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/1a0f7933a325ec4a0a8c5d6e5777c8d5.jpg?itok=ohvxOYhV"
+            src={producto.imagen}
+            alt={producto.nombreProducto}
             fluid
             rounded
-            className="object-fit-cover w-100"
+            className="object-fit-cover w-100 imagen-detalle"
           />
         </Col>
         <Col lg={6} className="mt-4 mt-lg-0">
-          <h5 className="text-uppercase fw-bold text-light">Celestial Rift</h5>
-          <div className="mb-2 text-light">
-            Desarrollado por: NovaCore Studios
-          </div>
-          <div className="text-info mb-3 fw-bold">Aventura</div>
-          <h3 className="fw-bold mb-4 text-light">$5999</h3>
+          <h5 className="text-uppercase fw-bold text-light">
+            {producto.nombreProducto}
+          </h5>
+          <div className="mb-2 text-light">{producto.desarrollador}</div>
+          <div className="text-info mb-3 fw-bold">{producto.categoria}</div>
+          <h3 className="fw-bold mb-4 text-light">${producto.precio}</h3>
           <Button size="lg" className="btn btn-info d-block mb-4 ">
             Añadir al carrito
           </Button>
           <div>
-            <p className="mt-4 text-light">
-              Explora un vasto mundo lleno de misterios y magia en Celestial
-              Rift, un RPG de mundo abierto con mecánicas únicas de combate y
-              una narrativa envolvente. Enfréntate a criaturas mitológicas,
-              domina los elementos y descubre los secretos de una civilización
-              perdida. Ideal para fans de Skyrim y Zelda: BOTW.
-            </p>
+            <p className="mt-4 text-light">{producto.descripcion_amplia}</p>
           </div>
           <div>
             <h6 className="mt-4 text-info">DETALLES DEL JUEGO</h6>
             <ul>
+              <li className="text-light">Género: {producto.categoria}</li>
               <li className="text-light">
-                Género: RPG / Mundo abierto / Aventura
+                Desarrollador: {producto.desarrollador}
               </li>
-              <li className="text-light">Desarrollador: NovaCore Studios</li>
             </ul>
           </div>
           <div>
             <h6 className="mt-4 text-info">REQUISITOS DEL SISTEMA</h6>
             <div className="d-flex flex-wrap gap-3 mt-2 mb-3">
-              <div className="text-light">Windows 10</div>
+              <div className="text-light">{producto.requisitos_minimos}</div>
             </div>
           </div>
           <Link to="/" className="text-decoration-none">
