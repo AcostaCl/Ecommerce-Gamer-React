@@ -2,7 +2,7 @@ import { Container, Table, Button } from "react-bootstrap";
 import "../../styles/Carrito.css";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-
+import { Link } from "react-router";
 const Carrito = () => {
   const [carrito, setCarrito] = useState([]);
 
@@ -73,8 +73,9 @@ const Carrito = () => {
             </Table>
             <div className="d-flex justify-content-between align-items-center">
               <h3 className="text-light">Total: ${total.toFixed(2)}</h3>
-
-              <Button size="sm">Proceder al pago</Button>
+              <Link to={"*"}>
+                <Button size="sm">Proceder al pago</Button>
+              </Link>
             </div>
           </>
         )}
