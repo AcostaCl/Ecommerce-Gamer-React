@@ -1,6 +1,41 @@
 .fondo-carrito {
   background-color: #151536;
 }
-.carrito-container {
-  min-height: 70vh;
+
+.banner-carrito {
+  background-color: #0b0b20;
+  height: 15vh;
+  padding: 20px;
+}
+.text-carrito {
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #9803f4, 0 0 25px #03e8f4, 0 0 50px #6703f4;
+  font-size: 2rem;
+}
+
+.imagen-carrito {
+  width: 80px;
+}
+.tabla-carrito thead,
+.tabla-carrito tbody,
+.tabla-carrito td,
+.tabla-carrito th {
+  background-color: #0b0b20;
+  color: #ffffff;
+  border-color: #434389;
+  border-left: none;
+  border-right: none;
+}
+
+.boton-carrito {
+  width: 100%;
+  background-color: #6708a3;
+  border: 1px solid #400879;
+}
+.boton-carrito:hover {
+  background-color: #f403f4;
+  border: 1px solid #f403d4;
 }
