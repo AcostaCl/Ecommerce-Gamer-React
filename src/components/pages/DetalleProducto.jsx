@@ -1,25 +1,36 @@
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 import "../../styles/DetalleProducto.css";
-import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { obtenerProductoAPI } from "../helpers/queries";
+import Swal from "sweetalert2";
 const DetalleProducto = () => {
   const { id } = useParams();
   const [producto, setProducto] = useState({});
 
   useEffect(() => {
+    const obtenerProducto = async () => {
+      const respuesta = await obtenerProductoAPI(id);
+      if (respuesta.status === 200) {
+        const datos = await respuesta.json();
+        setProducto(datos);
+      } else {
+        alert("Ocurrió un error, intente más tarde.");
+      }
+    };
     obtenerProducto();
-  }, []);
+  }, [id]);
 
-  const obtenerProducto = async () => {
-    const respuesta = await obtenerProductoAPI(id);
-    if (respuesta.status === 200) {
-      const datos = await respuesta.json();
-      setProducto(datos);
-    } else {
-      alert("Ocurrió un error, intente este paso en unos minutos");
-    }
+  const agregarAlCarrito = () => {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    carrito.push(producto);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    Swal.fire({
+      title: "¡Agregado!",
+      text: "El producto fue agregado al carrito.",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
   };
 
   return (
@@ -48,7 +59,11 @@ const DetalleProducto = () => {
           <div>
             <p className="mt-4 text-light">{producto.descripcion_amplia}</p>
           </div>
-          <Button size="md" className="btn btn-info d-block mb-4 ">
+          <Button
+            size="md"
+            className="btn btn-info d-block mb-4"
+            onClick={agregarAlCarrito}
+          >
             Agregar al carrito
           </Button>
           <div>
