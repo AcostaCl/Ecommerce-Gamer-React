@@ -63,7 +63,7 @@ const Inicio = () => {
                 <Form className="d-flex w-75 form-custom">
                   <input
                     type="search"
-                    placeholder="Buscar consolas, juegos..."
+                    placeholder="Buscar categorias, juegos..."
                     className="me-2 bg-transparent  neon-input"
                     value={filtro}
                     onChange={handleBusqueda}
