@@ -23,7 +23,7 @@ const Categorias = () => {
   }, [categoriaNombre]);
 
   return (
-    <div className="detalleproducto-fondo">
+    <div className="detalleproducto-fondo min-vh-100">
       <Container>
         <h2 className="display-6 text-info py-3">
           Categoría: {categoriaNombre}
@@ -35,7 +35,7 @@ const Categorias = () => {
               <CardProducto key={producto.id} producto={producto} />
             ))
           ) : (
-            <p>No hay productos en esta categoría.</p>
+            <p className="text-light">No hay productos en esta categoría.</p>
           )}
         </Row>
       </Container>
